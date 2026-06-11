@@ -396,3 +396,116 @@ def _poisson_1x2(lam_home: float, lam_away: float, max_goals: int = 8) -> tuple[
             else:
                 pl += p
     return pw, pd, pl
+
+
+# ---------------------------------------------------------------------------
+# Free news fetchers (RSS + Google News). Optional supplement to sharpen p_start.
+# Each returns plain dicts: {title, summary, url, source, source_kind, published(ISO)}.
+# ---------------------------------------------------------------------------
+
+def _entry_published_iso(entry) -> str:
+    pp = getattr(entry, "published_parsed", None) or getattr(entry, "updated_parsed", None)
+    if pp:
+        return datetime(*pp[:6], tzinfo=timezone.utc).isoformat()
+    return _now_iso()
+
+
+def fetch_rss(url: str, *, source: str, source_kind: str) -> list[dict]:
+    """Parse one RSS feed into news items. Raises FetchError on a hard failure."""
+    import feedparser
+    feed = feedparser.parse(url)
+    if getattr(feed, "bozo", 0) and not feed.entries:
+        raise FetchError(source, f"RSS parse failed: {getattr(feed, 'bozo_exception', '')}")
+    items = []
+    for e in feed.entries:
+        items.append({
+            "title": getattr(e, "title", ""),
+            "summary": getattr(e, "summary", getattr(e, "description", "")),
+            "url": getattr(e, "link", ""),
+            "source": source, "source_kind": source_kind,
+            "published": _entry_published_iso(e),
+        })
+    return items
+
+
+def fetch_google_news(query: str, template: str) -> list[dict]:
+    """Google News RSS search for one query (free, no key)."""
+    from urllib.parse import quote
+    url = template.format(query=quote(query))
+    items = fetch_rss(url, source="google_news", source_kind="google_news")
+    for it in items:
+        it["query"] = query
+    return items
+
+
+def build_news_queries(gd: GameData, squad_ids: list[int], watchlist_size: int = 60) -> list[str]:
+    """Queries from: current squad players + top watchlist names + every team still alive."""
+    queries: list[str] = []
+    by_id = {p.id: p for p in gd.players}
+    for pid in squad_ids:
+        p = by_id.get(pid)
+        if p:
+            queries.append(f'"{p.name}" world cup')
+    # alive teams = those with remaining fixtures
+    alive = {f.home for f in gd.fixtures if not f.is_played} | \
+            {f.away for f in gd.fixtures if not f.is_played}
+    for team in sorted(alive):
+        queries.append(f'"{team}" world cup lineup injury')
+    return queries[: watchlist_size + len(alive)]
+
+
+def gather_news(config: dict, queries: list[str]) -> tuple[list[dict], dict[str, str]]:
+    """Fetch all configured RSS feeds + per-query Google News, politely throttled.
+
+    Returns (items, stale) where stale maps a failed source -> the failure time, so the
+    report can flag it. Never raises for a single-source failure (news is a supplement).
+    """
+    news_cfg = config.get("news", {})
+    if not news_cfg.get("enabled", True):
+        return [], {}
+    interval = news_cfg.get("request_interval_sec", 1.0)
+    items: list[dict] = []
+    stale: dict[str, str] = {}
+
+    for url in news_cfg.get("rss_feeds", []):
+        try:
+            items += fetch_rss(url, source=url, source_kind="major_news")
+        except FetchError:
+            stale[url] = _now_iso()
+        time.sleep(interval)
+
+    template = news_cfg.get("google_news_template",
+                            "https://news.google.com/rss/search?q={query}&hl=en-US&gl=US&ceid=US:en")
+    for q in queries:
+        try:
+            items += fetch_google_news(q, template)
+        except FetchError:
+            stale.setdefault("google_news", _now_iso())
+        time.sleep(interval)
+
+    if items:
+        _write_snapshot("news", "headlines", json.dumps(items, ensure_ascii=False))
+    return items, stale
+
+
+def fetch_lineups(site: dict) -> tuple[list[str], Optional[str]]:
+    """Best-effort predicted-XI scrape. Selectors WILL rot — wrapped so failure only flags.
+
+    Returns (player_names, stale_since). On any failure returns ([], now) so the report
+    surfaces a staleness flag rather than trusting empty data.
+    """
+    try:
+        from bs4 import BeautifulSoup
+        url = site["url"]
+        req = urllib.request.Request(url, headers={"User-Agent": "wc-fantasy/0.1"})
+        with urllib.request.urlopen(req, timeout=20) as resp:
+            html = resp.read().decode("utf-8", errors="ignore")
+        soup = BeautifulSoup(html, "html.parser")
+        # generic heuristic: names often sit in elements tagged with 'player'
+        names = [el.get_text(strip=True) for el in soup.select("[class*=player]")]
+        names = [n for n in names if 3 <= len(n) <= 40]
+        if not names:
+            return [], _now_iso()
+        return names, None
+    except Exception:
+        return [], _now_iso()

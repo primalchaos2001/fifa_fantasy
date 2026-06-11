@@ -2,5 +2,5 @@
 requests>=2.31
 feedparser>=6.0
 beautifulsoup4>=4.12
-pulp>=2.7
+pulp>=2.7,<4      # <4: our LpVariable/PULP_CBC_CMD usage is deprecated in PuLP 4.0
 pyyaml>=6.0

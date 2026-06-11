@@ -83,6 +83,13 @@ COUNTRY_CAP_BY_STAGE = {
     "F": 6,     # VERIFY
 }
 
+# Official players.json `matchStatus` -> baseline p_start. This is a confirmed-lineup
+# signal that the game populates ~1h before kickoff for the imminent matchday — the
+# highest-trust availability source, free, no scraping. News only supplements it.
+#   start = named in the XI; sub = on the bench; not_in_squad = omitted.
+MATCHSTATUS_P_START = {"start": 1.0, "sub": 0.15, "not_in_squad": 0.0}
+DEFAULT_P_START = 0.7          # status 'playing' but no lineup confirmed yet
+
 FREE_TRANSFERS_DEFAULT = 2      # per matchday (group). Knockout rounds may differ. VERIFY
 TRANSFER_HIT_PTS = -3           # per extra transfer beyond free
 CAPTAIN_MULTIPLIER = 2
