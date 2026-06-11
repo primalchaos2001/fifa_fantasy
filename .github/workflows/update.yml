@@ -1,0 +1,60 @@
+name: Daily Tactical Update & Deploy
+
+on:
+  schedule:
+    - cron: '0 6 * * *'        # Run every day at 06:00 UTC
+  push:
+    branches:
+      - main                  # Run on pushes to the main branch
+  workflow_dispatch:          # Allow manual triggers from the Actions tab
+
+jobs:
+  update-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write         # Allows the action to commit & push changes back to the repo
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+        cache: 'pip'
+
+    - name: Install Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        # Install optional dependencies for testing and LLM features if needed
+        # pip install -r requirements-optional.txt || true
+
+    - name: Run Fantasy Update Engine
+      run: |
+        python -m wc_fantasy.main update
+      env:
+        # Anthropic key can be injected here as a repository secret if LLM extraction is desired:
+        # ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        # The engine falls back to keywords automatically if this secret is missing.
+        PYTHONUNBUFFERED: "1"
+
+    - name: Commit & Push Web Database Changes
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        
+        # Add updated files (reports, local state logs, and the web JSON database)
+        git add docs/data.json docs/assets/ data/
+        
+        # Only commit and push if there are actual modifications to avoid empty commits
+        if ! git diff-index --quiet HEAD --; then
+          git commit -m "chore(data): automated daily tactical update [skip ci]"
+          git push origin HEAD:${{ github.ref_name }}
+          echo "Changes committed and pushed successfully."
+        else
+          echo "No tactical data changes detected. Skipping commit."
+        fi

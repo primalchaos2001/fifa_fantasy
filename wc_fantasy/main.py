@@ -232,7 +232,33 @@ def cmd_update(ctx: Context) -> str:
     text = "\n".join(parts)
     path = report.save_report(text, "update")
     print(f"[saved] {path}")
+
+    # Export for web GUI
+    try:
+        docs_dir = report.DATA_DIR.parent / "docs"
+        assets_dir = docs_dir / "assets"
+        assets_dir.mkdir(parents=True, exist_ok=True)
+        video_path = assets_dir / "kickoff.mp4"
+        if not video_path.exists():
+            video_url = ctx.cfg.get("web", {}).get("video_url")
+            if video_url:
+                print(f"[web] downloading default kickoff video from {video_url}...")
+                try:
+                    import urllib.request
+                    req = urllib.request.Request(video_url, headers={"User-Agent": "wc-fantasy/0.1"})
+                    with urllib.request.urlopen(req, timeout=30) as resp, open(video_path, "wb") as fh:
+                        fh.write(resp.read())
+                    print("[web] downloaded kickoff video successfully.")
+                except Exception as exc:
+                    print(f"[web] WARNING: failed to download kickoff video: {exc}.")
+        
+        web_json_path = report.save_web_json(ctx.gd, ctx.horizon, ctx.next_xpts, ctx.states, ctx.cfg)
+        print(f"[web saved] {web_json_path}")
+    except Exception as exc:
+        print(f"[web WARNING] failed to generate web json or directory: {exc}")
+
     return text
+
 
 
 def _section(full_report: str) -> str:

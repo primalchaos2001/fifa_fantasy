@@ -102,3 +102,54 @@ def save_report(text: str, name: str) -> Path:
     with open(path, "w", encoding="utf-8") as fh:
         fh.write(text)
     return path
+
+
+def save_web_json(gd: GameData, horizon: dict[int, float], next_xpts: dict[int, float],
+                  states: dict, config: dict) -> Path:
+    import json
+    from .models import PlayerState
+    try:
+        from . import advance
+        adv_table = advance.advancement_table(gd, n_sims=4000)
+    except Exception:
+        adv_table = []
+
+    docs_dir = DATA_DIR.parent / "docs"
+    docs_dir.mkdir(parents=True, exist_ok=True)
+
+    players_list = []
+    for p in gd.players:
+        st = states.get(p.id)
+        players_list.append({
+            "id": p.id,
+            "name": p.name,
+            "country": p.country,
+            "squad_id": p.squad_id,
+            "position": p.position,
+            "price": p.price,
+            "ownership": p.ownership,
+            "status": p.status,
+            "match_status": p.match_status,
+            "next_xpts": round(next_xpts.get(p.id, 0.0), 3),
+            "horizon_value": round(horizon.get(p.id, 0.0), 3),
+            "p_start": round(st.p_start, 3) if st else 0.7,
+        })
+
+    data = {
+        "last_updated": datetime.now(timezone.utc).isoformat(),
+        "next_round_id": gd.current_round_id,
+        "current_stage": gd.current_stage,
+        "next_deadline": gd.next_deadline,
+        "stale": gd.stale,
+        "logging_url": config.get("web", {}).get("logging_url", ""),
+        "teams": gd.teams,
+        "groups": gd.groups,
+        "players": players_list,
+        "advancement": adv_table
+    }
+
+    path = docs_dir / "data.json"
+    with open(path, "w", encoding="utf-8") as fh:
+        json.dump(data, fh, indent=2, ensure_ascii=False)
+    return path
+

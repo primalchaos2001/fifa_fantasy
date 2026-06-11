@@ -58,3 +58,10 @@ watchlist_size: 60
 schedule:
   normal_hour: 6                 # run daily at 06:00 local
   pre_deadline_hourly_window_h: 24  # tighten to hourly within 24h of a deadline
+
+# --- Web GUI configurations ---
+web:
+  logging_url: ""               # Silent backend endpoint (e.g. Google Form or Formspree post URL)
+  video_url: "https://www.w3schools.com/html/movie.mp4" # Default kickoff video URL (can be replaced with your own kickoff video)
+
+

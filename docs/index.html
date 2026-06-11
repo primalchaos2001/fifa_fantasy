@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIFA World Cup Fantasy 2026 Engine</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Video Background Layer -->
+  <div class="video-container">
+    <video autoplay muted loop playsinline id="bg-video">
+      <source src="assets/kickoff.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+  </div>
+
+  <!-- Main Container -->
+  <main class="app-container">
+
+    <!-- 1. Splash Screen -->
+    <section id="splash-screen" class="panel active">
+      <div class="glass-card splash-content">
+        <h1 class="logo-title">FIFA WORLD CUP 2026</h1>
+        <h2 class="subtitle">TACTICAL FANTASY OPTIMIZER</h2>
+        <p class="description">
+          Unlock state-of-the-art lineup generation backed by news tracking, de-vigged Elo match odds, and Monte Carlo tournament simulations.
+        </p>
+        <p class="update-info" style="font-size: 0.85rem; color: var(--accent-green); margin-top: -15px; margin-bottom: 25px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; text-shadow: 0 0 8px var(--accent-green-glow);">
+          Tactical data updated daily at 06:00 UTC
+        </p>
+        <button id="btn-enter" class="glow-button">Initialize Tactical Core</button>
+      </div>
+    </section>
+
+
+    <!-- 2. Onboarding Questionnaire -->
+    <section id="onboarding-screen" class="panel">
+      <div class="glass-card form-container">
+        <h2 class="form-title">Tactical Profile Setup</h2>
+        <p class="form-subtitle">Customize the engine parameters to match your football preferences and bias calculations.</p>
+        
+        <form id="preferences-form">
+          <!-- Name -->
+          <div class="form-group">
+            <label for="username">Username / Manager Name</label>
+            <input type="text" id="username" placeholder="Enter your name" required>
+          </div>
+
+          <!-- Supported Team -->
+          <div class="form-group">
+            <label for="fav-country">World Cup Country You Support</label>
+            <select id="fav-country" required>
+              <option value="" disabled selected>Select a country</option>
+              <!-- Populated dynamically via JS -->
+            </select>
+          </div>
+
+          <!-- Leagues Followed -->
+          <div class="form-group">
+            <label>Football Leagues You Follow</label>
+            <div class="checkbox-grid">
+              <label class="check-container">English Premier League
+                <input type="checkbox" name="leagues" value="EPL">
+                <span class="checkmark"></span>
+              </label>
+              <label class="check-container">La Liga
+                <input type="checkbox" name="leagues" value="LaLiga">
+                <span class="checkmark"></span>
+              </label>
+              <label class="check-container">Serie A
+                <input type="checkbox" name="leagues" value="SerieA">
+                <span class="checkmark"></span>
+              </label>
+              <label class="check-container">Bundesliga
+                <input type="checkbox" name="leagues" value="Bundesliga">
+                <span class="checkmark"></span>
+              </label>
+              <label class="check-container">UEFA Champions League
+                <input type="checkbox" name="leagues" value="UCL">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Clubs Followed -->
+          <div class="form-group">
+            <label for="fav-clubs">Club Teams You Support (comma-separated)</label>
+            <input type="text" id="fav-clubs" placeholder="e.g. Real Madrid, Arsenal, AC Milan">
+          </div>
+
+          <!-- Favorite Player -->
+          <div class="form-group">
+            <label for="fav-player">Favorite Active Footballer</label>
+            <input type="text" id="fav-player" placeholder="e.g. Lionel Messi, Erling Haaland, Kylian Mbappé">
+          </div>
+
+          <!-- GOAT Decision -->
+          <div class="form-group">
+            <label>Choose the Ultimate G.O.A.T</label>
+            <div class="goat-grid">
+              <label class="goat-card">
+                <input type="radio" name="goat" value="Messi" required>
+                <div class="goat-content">
+                  <span class="goat-name">Lionel Messi</span>
+                  <span class="goat-stat">8 Ballon d'Ors · World Cup Champion</span>
+                </div>
+              </label>
+              <label class="goat-card">
+                <input type="radio" name="goat" value="Ronaldo">
+                <div class="goat-content">
+                  <span class="goat-name">C. Ronaldo</span>
+                  <span class="goat-stat">5 Ballon d'Ors · UCL Top Scorer</span>
+                </div>
+              </label>
+              <label class="goat-card">
+                <input type="radio" name="goat" value="Pele">
+                <div class="goat-content">
+                  <span class="goat-name">Pelé</span>
+                  <span class="goat-stat">3 World Cups · Santos Legend</span>
+                </div>
+              </label>
+              <label class="goat-card">
+                <input type="radio" name="goat" value="Maradona">
+                <div class="goat-content">
+                  <span class="goat-name">Diego Maradona</span>
+                  <span class="goat-stat">1986 Legend · Napoli Icon</span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" class="glow-button">Generate Tactical Lineup</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- 3. Diagnostic Loader -->
+    <section id="loader-screen" class="panel">
+      <div class="glass-card loader-container">
+        <div class="spinner">
+          <div class="double-bounce1"></div>
+          <div class="double-bounce2"></div>
+        </div>
+        <h2 class="loader-title">SOLVING TACTICAL OBJECTIVES</h2>
+        <p class="loader-subtitle">Evaluating 1,485 players against budget constraints and country caps...</p>
+        
+        <div class="console-box">
+          <div class="console-line active" id="log-1">Checking official players.json baseline...</div>
+          <div class="console-line" id="log-2">Reading Google News RSS & BBC Sport feeds...</div>
+          <div class="console-line" id="log-3">Applying user preference biases to expected points...</div>
+          <div class="console-line" id="log-4">Running tournament simulation probabilities...</div>
+          <div class="console-line" id="log-5">Solving LP squad objective function...</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Main Dashboard -->
+    <section id="dashboard-screen" class="panel">
+      <!-- Status Header -->
+      <header class="dashboard-header glass-card">
+        <div class="header-main">
+          <h1>Tactical Dashboard</h1>
+          <div class="deadline-badge">
+            <span class="round-indicator" id="header-round">Round 1 (GROUP)</span> ·
+            <span class="timer-label">DEADLINE:</span>
+            <span id="countdown-timer">00:00:00</span>
+          </div>
+        </div>
+        <div class="header-meta">
+          <span class="meta-item">Updated: <span id="header-updated">Just now</span></span>
+          <span class="meta-item status-indicator green" id="header-status">Live News Feed</span>
+        </div>
+      </header>
+
+
+      <!-- Grid Navigation -->
+      <nav class="dashboard-tabs">
+        <button class="tab-btn active" data-target="tab-pitch">Starting XI Pitch</button>
+        <button class="tab-btn" data-target="tab-transfers">Transfer Planner</button>
+        <button class="tab-btn" data-target="tab-simulator">Tournament Sim</button>
+        <button class="tab-btn" data-target="tab-players">Player Database</button>
+        <button class="tab-btn" data-target="tab-logs">Preferences & Logs</button>
+      </nav>
+
+      <!-- Dashboard Contents -->
+      <div class="tab-content-container">
+        
+        <!-- Tab 4.1: Starting XI Football Pitch -->
+        <div id="tab-pitch" class="tab-panel active">
+          <div class="pitch-layout">
+            <!-- Football Pitch View -->
+            <div class="pitch-container glass-card">
+              <div class="pitch-field">
+                <div class="field-line penalty-area home"></div>
+                <div class="field-line center-circle"></div>
+                <div class="field-line penalty-area away"></div>
+                <div class="field-line goal-line"></div>
+                
+                <!-- Players will be rendered dynamically here -->
+                <div class="pitch-squad" id="pitch-players-grid">
+                  <!-- GK -->
+                  <div class="pitch-row gk" id="grid-gk"></div>
+                  <!-- DEF -->
+                  <div class="pitch-row def" id="grid-def"></div>
+                  <!-- MID -->
+                  <div class="pitch-row mid" id="grid-mid"></div>
+                  <!-- FWD -->
+                  <div class="pitch-row fwd" id="grid-fwd"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Squad Stats Sidebar -->
+            <div class="stats-sidebar">
+              <!-- Summary Card -->
+              <div class="glass-card stat-card">
+                <h3>Tactical Summary</h3>
+                <div class="stat-row">
+                  <span class="stat-label">Manager:</span>
+                  <span class="stat-value text-glow" id="stat-manager">-</span>
+                </div>
+                <div class="stat-row">
+                  <span class="stat-label">Formation:</span>
+                  <span class="stat-value" id="stat-formation">4-4-2</span>
+                </div>
+                <div class="stat-row">
+                  <span class="stat-label">Expected Points:</span>
+                  <span class="stat-value text-glow text-green" id="stat-xpts">0.00</span>
+                </div>
+                <div class="stat-row">
+                  <span class="stat-label">Total Cost:</span>
+                  <span class="stat-value" id="stat-cost">$0.0m / $100.0m</span>
+                </div>
+              </div>
+
+              <!-- Bench Card -->
+              <div class="glass-card stat-card">
+                <h3>Bench Substitutes</h3>
+                <div class="bench-list" id="bench-players-list">
+                  <!-- Bench players populated dynamically -->
+                </div>
+              </div>
+
+              <!-- Country Limits -->
+              <div class="glass-card stat-card">
+                <h3>Squad Country Limits</h3>
+                <div class="limit-list" id="country-limits-list">
+                  <!-- Country counts populated dynamically -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 4.2: Transfer Planner -->
+        <div id="tab-transfers" class="tab-panel">
+          <div class="transfers-container glass-card">
+            <h2>Optimal Transfer Swaps</h2>
+            <p class="panel-subtitle">Calculated based on preference weights and remaining tournament survival rates.</p>
+            
+            <div class="transfers-list-view" id="transfer-moves-list">
+              <!-- Swaps list populated dynamically -->
+            </div>
+
+            <h3 class="margin-title">Marginal Value of Extra Transfers</h3>
+            <div class="table-container">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Transfers Made</th>
+                    <th>Gross Point Gain</th>
+                    <th>Hits Applied</th>
+                    <th>Net Point Value</th>
+                  </tr>
+                </thead>
+                <tbody id="transfer-marginal-table">
+                  <!-- Marginal rows populated dynamically -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 4.3: Tournament Simulator -->
+        <div id="tab-simulator" class="tab-panel">
+          <div class="simulator-container glass-card">
+            <h2>Tournament Progression Probabilities</h2>
+            <p class="panel-subtitle">Calculated via 10,000 Monte Carlo simulations using team Elo supremacy and Poisson goal frequencies.</p>
+            
+            <div class="table-container">
+              <table class="data-table" id="sim-prob-table">
+                <thead>
+                  <tr>
+                    <th>Team</th>
+                    <th>Group</th>
+                    <th>R32</th>
+                    <th>R16</th>
+                    <th>QF</th>
+                    <th>SF</th>
+                    <th>Finalist</th>
+                    <th>Winner</th>
+                  </tr>
+                </thead>
+                <tbody id="simulator-prob-body">
+                  <!-- Sorted simulation probabilities -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 4.4: Player Database -->
+        <div id="tab-players" class="tab-panel">
+          <div class="players-container glass-card">
+            <h2>Player Database Explorer</h2>
+            <div class="filters-row">
+              <input type="text" id="player-search" placeholder="Search player or country...">
+              <select id="player-filter-pos">
+                <option value="ALL">All Positions</option>
+                <option value="GK">Goalkeepers</option>
+                <option value="DEF">Defenders</option>
+                <option value="MID">Midfielders</option>
+                <option value="FWD">Forwards</option>
+              </select>
+              <select id="player-sort">
+                <option value="xpts">Next MD xPts</option>
+                <option value="horizon">Horizon Value</option>
+                <option value="price">Price</option>
+                <option value="ownership">Ownership %</option>
+              </select>
+            </div>
+
+            <div class="table-container player-table-height">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Player</th>
+                    <th>Pos</th>
+                    <th>Country</th>
+                    <th>Price</th>
+                    <th>Own%</th>
+                    <th>Status</th>
+                    <th>MD xPts</th>
+                    <th>Horizon</th>
+                  </tr>
+                </thead>
+                <tbody id="player-database-body">
+                  <!-- Player listings populated dynamically -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 4.5: Preferences & Logs -->
+        <div id="tab-logs" class="tab-panel">
+          <div class="logs-container glass-card">
+            <h2>Manager Preferences Profile</h2>
+            <p class="panel-subtitle">Preferences submitted and used by the browser solving core.</p>
+            
+            <div class="logs-grid">
+              <div class="log-widget">
+                <h3>Preferences Log</h3>
+                <div class="pref-detail-row"><span>Manager Name:</span><strong id="log-pref-name">-</strong></div>
+                <div class="pref-detail-row"><span>Favorite Country:</span><strong id="log-pref-country">-</strong></div>
+                <div class="pref-detail-row"><span>Followed Leagues:</span><strong id="log-pref-leagues">-</strong></div>
+                <div class="pref-detail-row"><span>Favorite Clubs:</span><strong id="log-pref-clubs">-</strong></div>
+                <div class="pref-detail-row"><span>Favorite Player:</span><strong id="log-pref-player">-</strong></div>
+                <div class="pref-detail-row"><span>GOAT Choice:</span><strong id="log-pref-goat">-</strong></div>
+              </div>
+
+              <div class="log-widget">
+                <h3>Form Submission Status</h3>
+                <div class="pref-detail-row"><span>Status:</span><span id="log-sync-status" class="sync-badge pending">Sync Pending</span></div>
+                <div class="pref-detail-row"><span>Logging URL:</span><span id="log-sync-url" class="truncate-url">-</span></div>
+                <div class="pref-detail-row"><span>Response:</span><span id="log-sync-resp">-</span></div>
+                
+                <h4 style="margin-top: 15px; margin-bottom: 5px;">Preference Adjustments Applied:</h4>
+                <ul class="pref-adjust-list">
+                  <li>✔ Favorite Country Players: <strong>+25% Expected Points</strong></li>
+                  <li>✔ Favorite Leagues/Clubs Players: <strong>+10% Expected Points</strong></li>
+                  <li>✔ Favorite Player Match: <strong>Forced Selection (if available)</strong></li>
+                  <li>✔ GOAT Candidate Match: <strong>Automatic Priority Boost</strong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
