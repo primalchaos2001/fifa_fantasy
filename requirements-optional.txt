@@ -1,0 +1,4 @@
+# OPTIONAL — only needed if you set extract.llm_extract: true in config.yaml and
+# provide your own ANTHROPIC_API_KEY. The default keyword extractor needs none of this.
+anthropic>=0.40
+pytest>=8.0   # for running the test suite

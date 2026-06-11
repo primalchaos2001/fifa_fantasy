@@ -1,0 +1,322 @@
+[
+    {
+        "id": 43817,
+        "name": "IR Iran",
+        "abbr": "IRN",
+        "seed": 2,
+        "squadLink": null,
+        "isActive": true,
+        "group": "b",
+        "groupPosition": null
+    },
+    {
+        "id": 43819,
+        "name": "Japan",
+        "abbr": "JPN",
+        "seed": 4,
+        "squadLink": null,
+        "isActive": true,
+        "group": "e",
+        "groupPosition": null
+    },
+    {
+        "id": 43822,
+        "name": "Korea Republic",
+        "abbr": "KOR",
+        "seed": 4,
+        "squadLink": null,
+        "isActive": true,
+        "group": "h",
+        "groupPosition": null
+    },
+    {
+        "id": 43834,
+        "name": "Qatar",
+        "abbr": "QAT",
+        "seed": 1,
+        "squadLink": null,
+        "isActive": true,
+        "group": "a",
+        "groupPosition": null
+    },
+    {
+        "id": 43835,
+        "name": "Saudi Arabia",
+        "abbr": "KSA",
+        "seed": 2,
+        "squadLink": null,
+        "isActive": true,
+        "group": "c",
+        "groupPosition": null
+    },
+    {
+        "id": 43849,
+        "name": "Cameroon",
+        "abbr": "CMR",
+        "seed": 4,
+        "squadLink": null,
+        "isActive": true,
+        "group": "g",
+        "groupPosition": null
+    },
+    {
+        "id": 43860,
+        "name": "Ghana",
+        "abbr": "GHA",
+        "seed": 2,
+        "squadLink": null,
+        "isActive": true,
+        "group": "h",
+        "groupPosition": null
+    },
+    {
+        "id": 43872,
+        "name": "Morocco",
+        "abbr": "MAR",
+        "seed": 3,
+        "squadLink": null,
+        "isActive": true,
+        "group": "f",
+        "groupPosition": null
+    },
+    {
+        "id": 43879,
+        "name": "Senegal",
+        "abbr": "SEN",
+        "seed": 3,
+        "squadLink": null,
+        "isActive": true,
+        "group": "a",
+        "groupPosition": null
+    },
+    {
+        "id": 43888,
+        "name": "Tunisia",
+        "abbr": "TUN",
+        "seed": 4,
+        "squadLink": null,
+        "isActive": true,
+        "group": "d",
+        "groupPosition": null
+    },
+    {
+        "id": 43899,
+        "name": "Canada",
+        "abbr": "CAN",
+        "seed": 2,
+        "squadLink": null,
+        "isActive": true,
+        "group": "f",
+        "groupPosition": null
+    },
+    {
+        "id": 43901,
+        "name": "Costa Rica",
+        "abbr": "CRC",
+        "seed": 0,
+        "squadLink": null,
+        "isActive": true,
+        "group": "a",
+        "groupPosition": null
+    },
+    {
+        "id": 43911,
+        "name": "Mexico",
+        "abbr": "MEX",
+        "seed": 3,
+        "squadLink": null,
+        "isActive": true,
+        "group": "c",
+        "groupPosition": null
+    },
+    {
+        "id": 43921,
+        "name": "USA",
+        "abbr": "USA",
+        "seed": 3,
+        "squadLink": null,
+        "isActive": true,
+        "group": "b",
+        "groupPosition": null
+    },
+    {
+        "id": 43922,
+        "name": "Argentina",
+        "abbr": "ARG",
+        "seed": 1,
+        "squadLink": null,
+        "isActive": true,
+        "group": "c",
+        "groupPosition": null
+    },
+    {
+        "id": 43924,
+        "name": "Brazil",
+        "abbr": "BRA",
+        "seed": 1,
+        "squadLink": null,
+        "isActive": true,
+        "group": "g",
+        "groupPosition": null
+    },
+    {
+        "id": 43927,
+        "name": "Ecuador",
+        "abbr": "ECU",
+        "seed": 2,
+        "squadLink": null,
+        "isActive": true,
+        "group": "a",
+        "groupPosition": null
+    },
+    {
+        "id": 43930,
+        "name": "Uruguay",
+        "abbr": "URU",
+        "seed": 3,
+        "squadLink": null,
+        "isActive": true,
+        "group": "h",
+        "groupPosition": null
+    },
+    {
+        "id": 43935,
+        "name": "Belgium",
+        "abbr": "BEL",
+        "seed": 1,
+        "squadLink": null,
+        "isActive": true,
+        "group": "f",
+        "groupPosition": null
+    },
+    {
+        "id": 43938,
+        "name": "Croatia",
+        "abbr": "CRO",
+        "seed": 4,
+        "squadLink": null,
+        "isActive": true,
+        "group": "f",
+        "groupPosition": null
+    },
+    {
+        "id": 43941,
+        "name": "Denmark",
+        "abbr": "DEN",
+        "seed": 3,
+        "squadLink": null,
+        "isActive": true,
+        "group": "d",
+        "groupPosition": null
+    },
+    {
+        "id": 43942,
+        "name": "England",
+        "abbr": "ENG",
+        "seed": 1,
+        "squadLink": null,
+        "isActive": true,
+        "group": "b",
+        "groupPosition": null
+    },
+    {
+        "id": 43946,
+        "name": "France",
+        "abbr": "FRA",
+        "seed": 1,
+        "squadLink": null,
+        "isActive": true,
+        "group": "d",
+        "groupPosition": null
+    },
+    {
+        "id": 43948,
+        "name": "Germany",
+        "abbr": "GER",
+        "seed": 3,
+        "squadLink": null,
+        "isActive": true,
+        "group": "e",
+        "groupPosition": null
+    },
+    {
+        "id": 43960,
+        "name": "Netherlands",
+        "abbr": "NED",
+        "seed": 4,
+        "squadLink": null,
+        "isActive": true,
+        "group": "a",
+        "groupPosition": null
+    },
+    {
+        "id": 43962,
+        "name": "Poland",
+        "abbr": "POL",
+        "seed": 4,
+        "squadLink": null,
+        "isActive": true,
+        "group": "c",
+        "groupPosition": null
+    },
+    {
+        "id": 43963,
+        "name": "Portugal",
+        "abbr": "POR",
+        "seed": 1,
+        "squadLink": null,
+        "isActive": true,
+        "group": "h",
+        "groupPosition": null
+    },
+    {
+        "id": 43969,
+        "name": "Spain",
+        "abbr": "ESP",
+        "seed": 1,
+        "squadLink": null,
+        "isActive": true,
+        "group": "e",
+        "groupPosition": null
+    },
+    {
+        "id": 43971,
+        "name": "Switzerland",
+        "abbr": "SUI",
+        "seed": 3,
+        "squadLink": null,
+        "isActive": true,
+        "group": "g",
+        "groupPosition": null
+    },
+    {
+        "id": 43974,
+        "name": "Wales",
+        "abbr": "WAL",
+        "seed": 0,
+        "squadLink": null,
+        "isActive": true,
+        "group": "e",
+        "groupPosition": null
+    },
+    {
+        "id": 43976,
+        "name": "Australia",
+        "abbr": "AUS",
+        "seed": 0,
+        "squadLink": null,
+        "isActive": true,
+        "group": "a",
+        "groupPosition": null
+    },
+    {
+        "id": 1902465,
+        "name": "Serbia",
+        "abbr": "SRB",
+        "seed": 2,
+        "squadLink": null,
+        "isActive": true,
+        "group": "g",
+        "groupPosition": null
+    }
+]

@@ -1,0 +1,7198 @@
+[
+ {
+  "id": 1,
+  "firstName": "Rayan",
+  "lastName": "Aït-Nouri",
+  "knownName": null,
+  "squadId": 1,
+  "position": "DEF",
+  "price": 4.9,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 1.1,
+  "roundsSelected": {
+   "1": 1.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 2,
+  "firstName": "Ramy",
+  "lastName": "Bensebaini",
+  "knownName": null,
+  "squadId": 1,
+  "position": "DEF",
+  "price": 4.4,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.2,
+  "roundsSelected": {
+   "1": 0.2
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 3,
+  "firstName": "Aïssa",
+  "lastName": "Mandi",
+  "knownName": null,
+  "squadId": 1,
+  "position": "DEF",
+  "price": 3.9,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 4,
+  "firstName": "Mehdi",
+  "lastName": "Dorval",
+  "knownName": null,
+  "squadId": 1,
+  "position": "DEF",
+  "price": 3.7,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 5,
+  "firstName": "Zinéddine",
+  "lastName": "Belaïd",
+  "knownName": null,
+  "squadId": 1,
+  "position": "DEF",
+  "price": 3.7,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 6,
+  "firstName": "Sohaib",
+  "lastName": "Nair",
+  "knownName": null,
+  "squadId": 1,
+  "position": "DEF",
+  "price": 3.5,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0.3,
+  "roundsSelected": {
+   "1": 0.3
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 7,
+  "firstName": "Rafik",
+  "lastName": "Belghali",
+  "knownName": null,
+  "squadId": 1,
+  "position": "DEF",
+  "price": 3.5,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 1.7,
+  "roundsSelected": {
+   "1": 1.7
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 8,
+  "firstName": "Achref",
+  "lastName": "Abada",
+  "knownName": null,
+  "squadId": 1,
+  "position": "DEF",
+  "price": 3.5,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.5,
+  "roundsSelected": {
+   "1": 0.5
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 9,
+  "firstName": "Mohammed",
+  "lastName": "Amoura",
+  "knownName": null,
+  "squadId": 1,
+  "position": "FWD",
+  "price": 6.2,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 10,
+  "firstName": "Amine",
+  "lastName": "Gouiri",
+  "knownName": null,
+  "squadId": 1,
+  "position": "FWD",
+  "price": 6.2,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 11,
+  "firstName": "Riyad",
+  "lastName": "Mahrez",
+  "knownName": null,
+  "squadId": 1,
+  "position": "MID",
+  "price": 6.5,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.6,
+  "roundsSelected": {
+   "1": 0.6
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 12,
+  "firstName": "Ibrahim",
+  "lastName": "Maza",
+  "knownName": null,
+  "squadId": 1,
+  "position": "FWD",
+  "price": 5.4,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.2,
+  "roundsSelected": {
+   "1": 0.2
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 13,
+  "firstName": "Anis",
+  "lastName": "Hadj Moussa",
+  "knownName": null,
+  "squadId": 1,
+  "position": "FWD",
+  "price": 5.3,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 14,
+  "firstName": "Farès",
+  "lastName": "Ghedjemis",
+  "knownName": null,
+  "squadId": 1,
+  "position": "FWD",
+  "price": 4.4,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 15,
+  "firstName": "Ahmed",
+  "lastName": "Benbouali",
+  "knownName": null,
+  "squadId": 1,
+  "position": "FWD",
+  "price": 4.2,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 16,
+  "firstName": "Amin",
+  "lastName": "Chiakha",
+  "knownName": null,
+  "squadId": 1,
+  "position": "FWD",
+  "price": 4,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 17,
+  "firstName": "Anthony",
+  "lastName": "Mandréa",
+  "knownName": null,
+  "squadId": 1,
+  "position": "GK",
+  "price": 3.9,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 18,
+  "firstName": "Luca",
+  "lastName": "Zidane",
+  "knownName": null,
+  "squadId": 1,
+  "position": "GK",
+  "price": 3.8,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 1,
+  "roundsSelected": {
+   "1": 1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 19,
+  "firstName": "Melvin",
+  "lastName": "Mastil",
+  "knownName": null,
+  "squadId": 1,
+  "position": "GK",
+  "price": 3.5,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 2,
+  "roundsSelected": {
+   "1": 2
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 20,
+  "firstName": "Kilian",
+  "lastName": "Belazzoug",
+  "knownName": null,
+  "squadId": 1,
+  "position": "GK",
+  "price": 3.5,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 21,
+  "firstName": "Adil",
+  "lastName": "Boulbina",
+  "knownName": null,
+  "squadId": 1,
+  "position": "MID",
+  "price": 4,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 2.5,
+  "roundsSelected": {
+   "1": 2.5
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 22,
+  "firstName": "Yacine",
+  "lastName": "Titraoui",
+  "knownName": null,
+  "squadId": 1,
+  "position": "MID",
+  "price": 4.7,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 23,
+  "firstName": "Ramiz",
+  "lastName": "Zerrouki",
+  "knownName": null,
+  "squadId": 1,
+  "position": "MID",
+  "price": 5.3,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 24,
+  "firstName": "Hicham",
+  "lastName": "Boudaoui",
+  "knownName": null,
+  "squadId": 1,
+  "position": "MID",
+  "price": 5.5,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 25,
+  "firstName": "Adil",
+  "lastName": "Aouchiche",
+  "knownName": null,
+  "squadId": 1,
+  "position": "MID",
+  "price": 5.6,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 26,
+  "firstName": "Houssem",
+  "lastName": "Aouar",
+  "knownName": null,
+  "squadId": 1,
+  "position": "MID",
+  "price": 6,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.2,
+  "roundsSelected": {
+   "1": 0.2
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 27,
+  "firstName": "Farès",
+  "lastName": "Chaïbi",
+  "knownName": null,
+  "squadId": 1,
+  "position": "MID",
+  "price": 6.2,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 28,
+  "firstName": "Cristian",
+  "lastName": "Romero",
+  "knownName": null,
+  "squadId": 2,
+  "position": "DEF",
+  "price": 4.9,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 4.9,
+  "roundsSelected": {
+   "1": 4.9
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 29,
+  "firstName": "Marcos",
+  "lastName": "Senesi",
+  "knownName": null,
+  "squadId": 2,
+  "position": "DEF",
+  "price": 4.7,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0.4,
+  "roundsSelected": {
+   "1": 0.4
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 30,
+  "firstName": "Nahuel",
+  "lastName": "Molina",
+  "knownName": null,
+  "squadId": 2,
+  "position": "DEF",
+  "price": 4.4,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 3.4,
+  "roundsSelected": {
+   "1": 3.4
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 31,
+  "firstName": "Nicolás",
+  "lastName": "Otamendi",
+  "knownName": null,
+  "squadId": 2,
+  "position": "DEF",
+  "price": 4.4,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 2.3,
+  "roundsSelected": {
+   "1": 2.3
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 32,
+  "firstName": "Marcos",
+  "lastName": "Acuña",
+  "knownName": null,
+  "squadId": 2,
+  "position": "DEF",
+  "price": 4.3,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 33,
+  "firstName": "Lucas",
+  "lastName": "Martínez Quarta",
+  "knownName": null,
+  "squadId": 2,
+  "position": "DEF",
+  "price": 4.3,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 34,
+  "firstName": "Nicolás",
+  "lastName": "Tagliafico",
+  "knownName": null,
+  "squadId": 2,
+  "position": "DEF",
+  "price": 4.3,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 1.3,
+  "roundsSelected": {
+   "1": 1.3
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 35,
+  "firstName": "Gabriel",
+  "lastName": "Rojas",
+  "knownName": null,
+  "squadId": 2,
+  "position": "DEF",
+  "price": 4,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 36,
+  "firstName": "Agustín",
+  "lastName": "Giay",
+  "knownName": null,
+  "squadId": 2,
+  "position": "DEF",
+  "price": 3.7,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 38,
+  "firstName": "Lionel",
+  "lastName": "Messi",
+  "knownName": null,
+  "squadId": 2,
+  "position": "FWD",
+  "price": 10,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 17.7,
+  "roundsSelected": {
+   "1": 17.7
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 39,
+  "firstName": "Julián",
+  "lastName": "Alvarez",
+  "knownName": null,
+  "squadId": 2,
+  "position": "FWD",
+  "price": 8.6,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 16,
+  "roundsSelected": {
+   "1": 16
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 40,
+  "firstName": "Gianluca",
+  "lastName": "Prestianni",
+  "knownName": null,
+  "squadId": 2,
+  "position": "MID",
+  "price": 5.6,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 41,
+  "firstName": "Giuliano",
+  "lastName": "Simeone",
+  "knownName": null,
+  "squadId": 2,
+  "position": "MID",
+  "price": 5.6,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.8,
+  "roundsSelected": {
+   "1": 0.8
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 42,
+  "firstName": "Nico",
+  "lastName": "González",
+  "knownName": null,
+  "squadId": 2,
+  "position": "MID",
+  "price": 5.6,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 43,
+  "firstName": "José Manuel",
+  "lastName": "López",
+  "knownName": null,
+  "squadId": 2,
+  "position": "FWD",
+  "price": 5.3,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 44,
+  "firstName": "Franco",
+  "lastName": "Mastantuono",
+  "knownName": null,
+  "squadId": 2,
+  "position": "MID",
+  "price": 5.8,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 45,
+  "firstName": "Emiliano",
+  "lastName": "Martínez",
+  "knownName": null,
+  "squadId": 2,
+  "position": "GK",
+  "price": 5,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 21.8,
+  "roundsSelected": {
+   "1": 21.8
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 46,
+  "firstName": "Gerónimo",
+  "lastName": "Rulli",
+  "knownName": null,
+  "squadId": 2,
+  "position": "GK",
+  "price": 4.5,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.2,
+  "roundsSelected": {
+   "1": 0.2
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 47,
+  "firstName": "Juan",
+  "lastName": "Musso",
+  "knownName": null,
+  "squadId": 2,
+  "position": "GK",
+  "price": 4.3,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 48,
+  "firstName": "Leandro",
+  "lastName": "Paredes",
+  "knownName": null,
+  "squadId": 2,
+  "position": "MID",
+  "price": 5.6,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.2,
+  "roundsSelected": {
+   "1": 0.2
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 49,
+  "firstName": "Máximo",
+  "lastName": "Perrone",
+  "knownName": null,
+  "squadId": 2,
+  "position": "MID",
+  "price": 5.6,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 50,
+  "firstName": "Rodrigo",
+  "lastName": "De Paul",
+  "knownName": null,
+  "squadId": 2,
+  "position": "MID",
+  "price": 5.9,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.9,
+  "roundsSelected": {
+   "1": 0.9
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 51,
+  "firstName": "Nico",
+  "lastName": "Paz",
+  "knownName": null,
+  "squadId": 2,
+  "position": "MID",
+  "price": 5.9,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 1.3,
+  "roundsSelected": {
+   "1": 1.3
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 52,
+  "firstName": "Alejandro",
+  "lastName": "Garnacho",
+  "knownName": null,
+  "squadId": 2,
+  "position": "MID",
+  "price": 5.5,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 53,
+  "firstName": "Valentín",
+  "lastName": "Barco",
+  "knownName": null,
+  "squadId": 2,
+  "position": "MID",
+  "price": 6.2,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.2,
+  "roundsSelected": {
+   "1": 0.2
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 54,
+  "firstName": "Exequiel",
+  "lastName": "Palacios",
+  "knownName": null,
+  "squadId": 2,
+  "position": "MID",
+  "price": 6,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.2,
+  "roundsSelected": {
+   "1": 0.2
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 55,
+  "firstName": "Thiago",
+  "lastName": "Almada",
+  "knownName": null,
+  "squadId": 2,
+  "position": "MID",
+  "price": 6.5,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.3,
+  "roundsSelected": {
+   "1": 0.3
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 56,
+  "firstName": "Alexis",
+  "lastName": "Mac Allister",
+  "knownName": null,
+  "squadId": 2,
+  "position": "MID",
+  "price": 6.6,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 3.3,
+  "roundsSelected": {
+   "1": 3.3
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 57,
+  "firstName": "Enzo",
+  "lastName": "Fernández",
+  "knownName": null,
+  "squadId": 2,
+  "position": "MID",
+  "price": 7.5,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 3.3,
+  "roundsSelected": {
+   "1": 3.3
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 58,
+  "firstName": "Jordan",
+  "lastName": "Bos",
+  "knownName": null,
+  "squadId": 3,
+  "position": "DEF",
+  "price": 4,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.5,
+  "roundsSelected": {
+   "1": 0.5
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 8
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 59,
+  "firstName": "Kye",
+  "lastName": "Rowles",
+  "knownName": null,
+  "squadId": 3,
+  "position": "DEF",
+  "price": 3.9,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 8
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 60,
+  "firstName": "Alessandro",
+  "lastName": "Circati",
+  "knownName": null,
+  "squadId": 3,
+  "position": "DEF",
+  "price": 3.9,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 8
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 61,
+  "firstName": "Cameron",
+  "lastName": "Burgess",
+  "knownName": null,
+  "squadId": 3,
+  "position": "DEF",
+  "price": 3.8,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 8
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 62,
+  "firstName": "Milos",
+  "lastName": "Degenek",
+  "knownName": null,
+  "squadId": 3,
+  "position": "DEF",
+  "price": 3.8,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 8
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 63,
+  "firstName": "Aziz",
+  "lastName": "Behich",
+  "knownName": null,
+  "squadId": 3,
+  "position": "DEF",
+  "price": 3.8,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 8
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 64,
+  "firstName": "Jason",
+  "lastName": "Geria",
+  "knownName": null,
+  "squadId": 3,
+  "position": "DEF",
+  "price": 3.7,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 8
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 65,
+  "firstName": "Fran",
+  "lastName": "Karacic",
+  "knownName": null,
+  "squadId": 3,
+  "position": "DEF",
+  "price": 3.6,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 8
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 66,
+  "firstName": "Kai",
+  "lastName": "Trewin",
+  "knownName": null,
+  "squadId": 3,
+  "position": "DEF",
+  "price": 3.5,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.5,
+  "roundsSelected": {
+   "1": 0.5
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 8
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 67,
+  "firstName": "Lucas",
+  "lastName": "Herrington",
+  "knownName": null,
+  "squadId": 3,
+  "position": "DEF",
+  "price": 3.5,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.3,
+  "roundsSelected": {
+   "1": 0.3
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 8
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 68,
+  "firstName": "Nestory",
+  "lastName": "Irankunda",
+  "knownName": null,
+  "squadId": 3,
+  "position": "FWD",
+  "price": 5.1,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.3,
+  "roundsSelected": {
+   "1": 0.3
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 8
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 69,
+  "firstName": "Martin",
+  "lastName": "Boyle",
+  "knownName": null,
+  "squadId": 3,
+  "position": "FWD",
+  "price": 5.1,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 8
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 70,
+  "firstName": "Nishan",
+  "lastName": "Velupillay",
+  "knownName": null,
+  "squadId": 3,
+  "position": "FWD",
+  "price": 4.4,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 8
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 71,
+  "firstName": "Deni",
+  "lastName": "Juric",
+  "knownName": "Deni Juric",
+  "squadId": 3,
+  "position": "FWD",
+  "price": 4.2,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 8
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 72,
+  "firstName": "Jacob",
+  "lastName": "Italiano",
+  "knownName": null,
+  "squadId": 3,
+  "position": "DEF",
+  "price": 4.2,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 8
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 73,
+  "firstName": "Ante",
+  "lastName": "Suto",
+  "knownName": null,
+  "squadId": 3,
+  "position": "FWD",
+  "price": 4,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 8
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 74,
+  "firstName": "Mathew",
+  "lastName": "Ryan",
+  "knownName": null,
+  "squadId": 3,
+  "position": "GK",
+  "price": 4.1,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.6,
+  "roundsSelected": {
+   "1": 0.6
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 8
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 75,
+  "firstName": "Paul",
+  "lastName": "Izzo",
+  "knownName": null,
+  "squadId": 3,
+  "position": "GK",
+  "price": 3.6,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 8
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 76,
+  "firstName": "Patrick",
+  "lastName": "Beach",
+  "knownName": null,
+  "squadId": 3,
+  "position": "GK",
+  "price": 3.5,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 1,
+  "roundsSelected": {
+   "1": 1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 8
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 77,
+  "firstName": "Paul",
+  "lastName": "Okon",
+  "knownName": null,
+  "squadId": 3,
+  "position": "MID",
+  "price": 4.7,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 8
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 78,
+  "firstName": "Patrick",
+  "lastName": "Yazbek",
+  "knownName": null,
+  "squadId": 3,
+  "position": "MID",
+  "price": 4.9,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 8
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 79,
+  "firstName": "Alex",
+  "lastName": "Robertson",
+  "knownName": null,
+  "squadId": 3,
+  "position": "MID",
+  "price": 5.1,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 8
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 80,
+  "firstName": "Connor",
+  "lastName": "Metcalfe",
+  "knownName": null,
+  "squadId": 3,
+  "position": "MID",
+  "price": 5.3,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 8
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 81,
+  "firstName": "Aiden",
+  "lastName": "O'Neill",
+  "knownName": null,
+  "squadId": 3,
+  "position": "MID",
+  "price": 5.4,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 8
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 82,
+  "firstName": "Awer",
+  "lastName": "Mabil",
+  "knownName": null,
+  "squadId": 3,
+  "position": "MID",
+  "price": 5.6,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 8
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 83,
+  "firstName": "Ajdin",
+  "lastName": "Hrustic",
+  "knownName": null,
+  "squadId": 3,
+  "position": "MID",
+  "price": 5.7,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 8
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 84,
+  "firstName": "Riley",
+  "lastName": "McGree",
+  "knownName": null,
+  "squadId": 3,
+  "position": "MID",
+  "price": 5.9,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 8
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 85,
+  "firstName": "David",
+  "lastName": "Alaba",
+  "knownName": null,
+  "squadId": 4,
+  "position": "DEF",
+  "price": 4.6,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 2.2,
+  "roundsSelected": {
+   "1": 2.2
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 20
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 86,
+  "firstName": "Philipp",
+  "lastName": "Lienhart",
+  "knownName": null,
+  "squadId": 4,
+  "position": "DEF",
+  "price": 4.3,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.2,
+  "roundsSelected": {
+   "1": 0.2
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 20
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 87,
+  "firstName": "Alexander",
+  "lastName": "Prass",
+  "knownName": null,
+  "squadId": 4,
+  "position": "DEF",
+  "price": 4.3,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 20
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 88,
+  "firstName": "Kevin",
+  "lastName": "Danso",
+  "knownName": null,
+  "squadId": 4,
+  "position": "DEF",
+  "price": 4.3,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.5,
+  "roundsSelected": {
+   "1": 0.5
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 20
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 90,
+  "firstName": "Stefan",
+  "lastName": "Posch",
+  "knownName": null,
+  "squadId": 4,
+  "position": "DEF",
+  "price": 4.3,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.3,
+  "roundsSelected": {
+   "1": 0.3
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 20
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 91,
+  "firstName": "Phillipp",
+  "lastName": "Mwene",
+  "knownName": null,
+  "squadId": 4,
+  "position": "DEF",
+  "price": 3.9,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 20
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 92,
+  "firstName": "Marco",
+  "lastName": "Friedl",
+  "knownName": null,
+  "squadId": 4,
+  "position": "DEF",
+  "price": 4.3,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 20
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 93,
+  "firstName": "David",
+  "lastName": "Affengruber",
+  "knownName": null,
+  "squadId": 4,
+  "position": "DEF",
+  "price": 3.9,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 20
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 94,
+  "firstName": "Michael",
+  "lastName": "Svoboda",
+  "knownName": null,
+  "squadId": 4,
+  "position": "DEF",
+  "price": 3.8,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 20
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 95,
+  "firstName": "Marko",
+  "lastName": "Arnautovic",
+  "knownName": null,
+  "squadId": 4,
+  "position": "FWD",
+  "price": 6,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.5,
+  "roundsSelected": {
+   "1": 0.5
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 20
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 96,
+  "firstName": "Michael",
+  "lastName": "Gregoritsch",
+  "knownName": null,
+  "squadId": 4,
+  "position": "FWD",
+  "price": 6,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.2,
+  "roundsSelected": {
+   "1": 0.2
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 20
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 97,
+  "firstName": "Sasa",
+  "lastName": "Kalajdzic",
+  "knownName": null,
+  "squadId": 4,
+  "position": "FWD",
+  "price": 6,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 20
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 98,
+  "firstName": "Alexander",
+  "lastName": "Schlager",
+  "knownName": "Alexander Schlager",
+  "squadId": 4,
+  "position": "GK",
+  "price": 4.6,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.4,
+  "roundsSelected": {
+   "1": 0.4
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 20
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 99,
+  "firstName": "Patrick",
+  "lastName": "Pentz",
+  "knownName": null,
+  "squadId": 4,
+  "position": "GK",
+  "price": 4.6,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 20
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 101,
+  "firstName": "Florian",
+  "lastName": "Wiegele",
+  "knownName": null,
+  "squadId": 4,
+  "position": "GK",
+  "price": 3.5,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.4,
+  "roundsSelected": {
+   "1": 0.4
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 20
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 102,
+  "firstName": "Carney",
+  "lastName": "Chukwuemeka",
+  "knownName": null,
+  "squadId": 4,
+  "position": "MID",
+  "price": 5,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.9,
+  "roundsSelected": {
+   "1": 0.9
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 20
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 103,
+  "firstName": "Konrad",
+  "lastName": "Laimer",
+  "knownName": null,
+  "squadId": 4,
+  "position": "MID",
+  "price": 5.8,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.3,
+  "roundsSelected": {
+   "1": 0.3
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 20
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 104,
+  "firstName": "Alessandro",
+  "lastName": "Schöpf",
+  "knownName": null,
+  "squadId": 4,
+  "position": "MID",
+  "price": 5.3,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 20
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 105,
+  "firstName": "Florian",
+  "lastName": "Grillitsch",
+  "knownName": null,
+  "squadId": 4,
+  "position": "MID",
+  "price": 5.5,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 20
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 106,
+  "firstName": "Nicolas",
+  "lastName": "Seiwald",
+  "knownName": null,
+  "squadId": 4,
+  "position": "MID",
+  "price": 5.6,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 20
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 107,
+  "firstName": "Marcel",
+  "lastName": "Sabitzer",
+  "knownName": null,
+  "squadId": 4,
+  "position": "MID",
+  "price": 6.8,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 3.6,
+  "roundsSelected": {
+   "1": 3.6
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 20
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 108,
+  "firstName": "Romano",
+  "lastName": "Schmid",
+  "knownName": null,
+  "squadId": 4,
+  "position": "MID",
+  "price": 6,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 20
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 109,
+  "firstName": "Patrick",
+  "lastName": "Wimmer",
+  "knownName": null,
+  "squadId": 4,
+  "position": "MID",
+  "price": 6,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 20
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 110,
+  "firstName": "Paul",
+  "lastName": "Wanner",
+  "knownName": null,
+  "squadId": 4,
+  "position": "MID",
+  "price": 5.6,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 20
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 111,
+  "firstName": "Xaver",
+  "lastName": "Schlager",
+  "knownName": "Xaver Schlager",
+  "squadId": 4,
+  "position": "MID",
+  "price": 5.5,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 20
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 112,
+  "firstName": "Christoph",
+  "lastName": "Baumgartner",
+  "knownName": null,
+  "squadId": 4,
+  "position": "MID",
+  "price": 6.7,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 20
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 114,
+  "firstName": "Maxim",
+  "lastName": "De Cuyper",
+  "knownName": null,
+  "squadId": 5,
+  "position": "DEF",
+  "price": 4.7,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 3.5,
+  "roundsSelected": {
+   "1": 3.5
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 14
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 115,
+  "firstName": "Timothy",
+  "lastName": "Castagne",
+  "knownName": null,
+  "squadId": 5,
+  "position": "DEF",
+  "price": 4.7,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.4,
+  "roundsSelected": {
+   "1": 0.4
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 14
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 116,
+  "firstName": "Arthur",
+  "lastName": "Theate",
+  "knownName": null,
+  "squadId": 5,
+  "position": "DEF",
+  "price": 4.5,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.3,
+  "roundsSelected": {
+   "1": 0.3
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 14
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 117,
+  "firstName": "Thomas",
+  "lastName": "Meunier",
+  "knownName": null,
+  "squadId": 5,
+  "position": "DEF",
+  "price": 4.8,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.8,
+  "roundsSelected": {
+   "1": 0.8
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 14
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 118,
+  "firstName": "Zeno",
+  "lastName": "Debast",
+  "knownName": null,
+  "squadId": 5,
+  "position": "DEF",
+  "price": 4.3,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.2,
+  "roundsSelected": {
+   "1": 0.2
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 14
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 119,
+  "firstName": "Axel",
+  "lastName": "Witsel",
+  "knownName": null,
+  "squadId": 5,
+  "position": "MID",
+  "price": 5,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 1.1,
+  "roundsSelected": {
+   "1": 1.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 14
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 120,
+  "firstName": "Koni",
+  "lastName": "De Winter",
+  "knownName": null,
+  "squadId": 5,
+  "position": "DEF",
+  "price": 4.2,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 14
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 121,
+  "firstName": "Brandon",
+  "lastName": "Mechele",
+  "knownName": null,
+  "squadId": 5,
+  "position": "DEF",
+  "price": 3.9,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 14
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 122,
+  "firstName": "Joaquin",
+  "lastName": "Seys",
+  "knownName": null,
+  "squadId": 5,
+  "position": "DEF",
+  "price": 3.9,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 14
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 123,
+  "firstName": "Nathan",
+  "lastName": "Ngoy",
+  "knownName": null,
+  "squadId": 5,
+  "position": "DEF",
+  "price": 3.7,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.4,
+  "roundsSelected": {
+   "1": 0.4
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 14
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 124,
+  "firstName": "Romelu",
+  "lastName": "Lukaku",
+  "knownName": null,
+  "squadId": 5,
+  "position": "FWD",
+  "price": 7.4,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 2.1,
+  "roundsSelected": {
+   "1": 2.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 14
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 125,
+  "firstName": "Jérémy",
+  "lastName": "Doku",
+  "knownName": null,
+  "squadId": 5,
+  "position": "MID",
+  "price": 7.5,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 13.2,
+  "roundsSelected": {
+   "1": 13.2
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 14
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 127,
+  "firstName": "Dodi",
+  "lastName": "Lukébakio",
+  "knownName": null,
+  "squadId": 5,
+  "position": "FWD",
+  "price": 5.9,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 14
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 128,
+  "firstName": "Alexis",
+  "lastName": "Saelemaekers",
+  "knownName": null,
+  "squadId": 5,
+  "position": "MID",
+  "price": 5.7,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 14
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 129,
+  "firstName": "Charles",
+  "lastName": "De Ketelaere",
+  "knownName": null,
+  "squadId": 5,
+  "position": "MID",
+  "price": 5.6,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 1.1,
+  "roundsSelected": {
+   "1": 1.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 14
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 132,
+  "firstName": "Senne",
+  "lastName": "Lammens",
+  "knownName": null,
+  "squadId": 5,
+  "position": "GK",
+  "price": 4.6,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 1.6,
+  "roundsSelected": {
+   "1": 1.6
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 14
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 135,
+  "firstName": "Nicolas",
+  "lastName": "Raskin",
+  "knownName": null,
+  "squadId": 5,
+  "position": "MID",
+  "price": 5.3,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 14
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 136,
+  "firstName": "Amadou",
+  "lastName": "Onana",
+  "knownName": null,
+  "squadId": 5,
+  "position": "MID",
+  "price": 5.9,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.2,
+  "roundsSelected": {
+   "1": 0.2
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 14
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 137,
+  "firstName": "Youri",
+  "lastName": "Tielemans",
+  "knownName": null,
+  "squadId": 5,
+  "position": "MID",
+  "price": 6.1,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 1.2,
+  "roundsSelected": {
+   "1": 1.2
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 14
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 138,
+  "firstName": "Kevin",
+  "lastName": "De Bruyne",
+  "knownName": null,
+  "squadId": 5,
+  "position": "MID",
+  "price": 7.5,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 5.5,
+  "roundsSelected": {
+   "1": 5.5
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 14
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 139,
+  "firstName": "Sead",
+  "lastName": "Kolasinac",
+  "knownName": null,
+  "squadId": 6,
+  "position": "DEF",
+  "price": 4.3,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.2,
+  "roundsSelected": {
+   "1": 0.2
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 3
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 140,
+  "firstName": "Amar",
+  "lastName": "Dedic",
+  "knownName": null,
+  "squadId": 6,
+  "position": "DEF",
+  "price": 4.3,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.4,
+  "roundsSelected": {
+   "1": 0.4
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 3
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 141,
+  "firstName": "Tarik",
+  "lastName": "Muharemovic",
+  "knownName": null,
+  "squadId": 6,
+  "position": "DEF",
+  "price": 3.9,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.3,
+  "roundsSelected": {
+   "1": 0.3
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 3
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 142,
+  "firstName": "Nikola",
+  "lastName": "Katic",
+  "knownName": null,
+  "squadId": 6,
+  "position": "DEF",
+  "price": 3.8,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.2,
+  "roundsSelected": {
+   "1": 0.2
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 3
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 143,
+  "firstName": "Stjepan",
+  "lastName": "Radeljic",
+  "knownName": null,
+  "squadId": 6,
+  "position": "DEF",
+  "price": 3.7,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 3
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 144,
+  "firstName": "Nihad",
+  "lastName": "Mujakic",
+  "knownName": null,
+  "squadId": 6,
+  "position": "DEF",
+  "price": 3.6,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 3
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 145,
+  "firstName": "Nidal",
+  "lastName": "Celik",
+  "knownName": null,
+  "squadId": 6,
+  "position": "DEF",
+  "price": 3.5,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.5,
+  "roundsSelected": {
+   "1": 0.5
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 3
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 146,
+  "firstName": "Ermedin",
+  "lastName": "Demirovic",
+  "knownName": null,
+  "squadId": 6,
+  "position": "FWD",
+  "price": 6.2,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 3
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 147,
+  "firstName": "Edin",
+  "lastName": "Dzeko",
+  "knownName": null,
+  "squadId": 6,
+  "position": "FWD",
+  "price": 6.1,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 1,
+  "roundsSelected": {
+   "1": 1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 3
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 148,
+  "firstName": "Jovo",
+  "lastName": "Lukic",
+  "knownName": null,
+  "squadId": 6,
+  "position": "FWD",
+  "price": 5.6,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 3
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 149,
+  "firstName": "Haris",
+  "lastName": "Tabakovic",
+  "knownName": null,
+  "squadId": 6,
+  "position": "FWD",
+  "price": 5.1,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 3
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 150,
+  "firstName": "Esmir",
+  "lastName": "Bajraktarevic",
+  "knownName": null,
+  "squadId": 6,
+  "position": "FWD",
+  "price": 4.7,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.2,
+  "roundsSelected": {
+   "1": 0.2
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 3
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 151,
+  "firstName": "Samed",
+  "lastName": "Bazdar",
+  "knownName": null,
+  "squadId": 6,
+  "position": "FWD",
+  "price": 4.5,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 3
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 152,
+  "firstName": "Kerim",
+  "lastName": "Alajbegovic",
+  "knownName": null,
+  "squadId": 6,
+  "position": "FWD",
+  "price": 4.2,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.3,
+  "roundsSelected": {
+   "1": 0.3
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 3
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 153,
+  "firstName": "Nikola",
+  "lastName": "Vasilj",
+  "knownName": null,
+  "squadId": 6,
+  "position": "GK",
+  "price": 4,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.7,
+  "roundsSelected": {
+   "1": 0.7
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 3
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 154,
+  "firstName": "Osman",
+  "lastName": "Hadzikic",
+  "knownName": null,
+  "squadId": 6,
+  "position": "GK",
+  "price": 3.6,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 3
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 155,
+  "firstName": "Martin",
+  "lastName": "Zlomislic",
+  "knownName": null,
+  "squadId": 6,
+  "position": "GK",
+  "price": 3.5,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.3,
+  "roundsSelected": {
+   "1": 0.3
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 3
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 156,
+  "firstName": "Amar",
+  "lastName": "Memic",
+  "knownName": null,
+  "squadId": 6,
+  "position": "MID",
+  "price": 4.7,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 3
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 157,
+  "firstName": "Dzenis",
+  "lastName": "Burnic",
+  "knownName": null,
+  "squadId": 6,
+  "position": "MID",
+  "price": 4.9,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 3
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 158,
+  "firstName": "Ivan",
+  "lastName": "Sunjic",
+  "knownName": null,
+  "squadId": 6,
+  "position": "MID",
+  "price": 5.1,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 3
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 159,
+  "firstName": "Armin",
+  "lastName": "Gigovic",
+  "knownName": null,
+  "squadId": 6,
+  "position": "MID",
+  "price": 5.1,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 3
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 160,
+  "firstName": "Ivan",
+  "lastName": "Basic",
+  "knownName": null,
+  "squadId": 6,
+  "position": "MID",
+  "price": 5.1,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 3
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 161,
+  "firstName": "Benjamin",
+  "lastName": "Tahirovic",
+  "knownName": null,
+  "squadId": 6,
+  "position": "MID",
+  "price": 5.3,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 3
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 162,
+  "firstName": "Amir",
+  "lastName": "Hadziahmetovic",
+  "knownName": null,
+  "squadId": 6,
+  "position": "MID",
+  "price": 5.5,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 3
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 164,
+  "firstName": "Gabriel",
+  "lastName": "dos Santos Magalhães",
+  "knownName": "Gabriel Magalhães",
+  "squadId": 7,
+  "position": "DEF",
+  "price": 5.5,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 20.5,
+  "roundsSelected": {
+   "1": 20.5
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 6
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 165,
+  "firstName": "Marcos",
+  "lastName": "Aoás Corrêa",
+  "knownName": "Marquinhos",
+  "squadId": 7,
+  "position": "DEF",
+  "price": 5.2,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 7.4,
+  "roundsSelected": {
+   "1": 7.4
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 6
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 166,
+  "firstName": "Roger",
+  "lastName": "Ibañez da Silva",
+  "knownName": "Ibañez",
+  "squadId": 7,
+  "position": "DEF",
+  "price": 4.4,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.3,
+  "roundsSelected": {
+   "1": 0.3
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 6
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 167,
+  "firstName": "Danilo Luiz",
+  "lastName": "da Silva",
+  "knownName": "Danilo",
+  "squadId": 7,
+  "position": "DEF",
+  "price": 4.3,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.7,
+  "roundsSelected": {
+   "1": 0.7
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 6
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 168,
+  "firstName": "Douglas",
+  "lastName": "dos Santos Justino de Melo",
+  "knownName": "Douglas Santos",
+  "squadId": 7,
+  "position": "DEF",
+  "price": 4.3,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.4,
+  "roundsSelected": {
+   "1": 0.4
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 6
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 169,
+  "firstName": "Gleison Bremer",
+  "lastName": "Silva Nascimento",
+  "knownName": "Bremer",
+  "squadId": 7,
+  "position": "DEF",
+  "price": 4.3,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.5,
+  "roundsSelected": {
+   "1": 0.5
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 6
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 170,
+  "firstName": "Leonardo",
+  "lastName": "Pereira",
+  "knownName": "Léo Pereira",
+  "squadId": 7,
+  "position": "DEF",
+  "price": 4.2,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 6
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 173,
+  "firstName": "Vinícius José",
+  "lastName": "Paixão de Oliveira Júnior",
+  "knownName": "Vinícius Júnior",
+  "squadId": 7,
+  "position": "MID",
+  "price": 10,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 12.7,
+  "roundsSelected": {
+   "1": 12.7
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 6
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 174,
+  "firstName": "Matheus",
+  "lastName": "Santos Carneiro da Cunha",
+  "knownName": "Matheus Cunha",
+  "squadId": 7,
+  "position": "FWD",
+  "price": 7.3,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 3.3,
+  "roundsSelected": {
+   "1": 3.3
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 6
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 176,
+  "firstName": "Gabriel Teodoro",
+  "lastName": "Martinelli Silva",
+  "knownName": "Gabriel Martinelli",
+  "squadId": 7,
+  "position": "MID",
+  "price": 6.5,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.7,
+  "roundsSelected": {
+   "1": 0.7
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 6
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 177,
+  "firstName": "Luiz Henrique André",
+  "lastName": "Rosa da Silva",
+  "knownName": "Luiz Henrique",
+  "squadId": 7,
+  "position": "FWD",
+  "price": 6.1,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.2,
+  "roundsSelected": {
+   "1": 0.2
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 6
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 178,
+  "firstName": "Igor Thiago",
+  "lastName": "Nascimento Rodrigues",
+  "knownName": "Igor Thiago",
+  "squadId": 7,
+  "position": "FWD",
+  "price": 5.9,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 2.5,
+  "roundsSelected": {
+   "1": 2.5
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 6
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 179,
+  "firstName": "Rayan Vitor",
+  "lastName": "Simplício Rocha",
+  "knownName": "Rayan",
+  "squadId": 7,
+  "position": "FWD",
+  "price": 5.6,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.2,
+  "roundsSelected": {
+   "1": 0.2
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 6
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 181,
+  "firstName": "Endrick Felipe",
+  "lastName": "Moreira de Sousa",
+  "knownName": "Endrick",
+  "squadId": 7,
+  "position": "FWD",
+  "price": 5.5,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 2.8,
+  "roundsSelected": {
+   "1": 2.8
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 6
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 182,
+  "firstName": "Ederson",
+  "lastName": "Santana de Moraes",
+  "knownName": "Ederson",
+  "squadId": 7,
+  "position": "GK",
+  "price": 5,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 3.1,
+  "roundsSelected": {
+   "1": 3.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 6
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 183,
+  "firstName": "Alisson Ramsés",
+  "lastName": "Becker",
+  "knownName": "Alisson Becker",
+  "squadId": 7,
+  "position": "GK",
+  "price": 5,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 5.1,
+  "roundsSelected": {
+   "1": 5.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 6
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 186,
+  "firstName": "Fábio Henrique",
+  "lastName": "Tavares",
+  "knownName": "Fabinho",
+  "squadId": 7,
+  "position": "MID",
+  "price": 5.2,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.3,
+  "roundsSelected": {
+   "1": 0.3
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 6
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 187,
+  "firstName": "Danilo",
+  "lastName": "dos Santos de Oliveira",
+  "knownName": "Danilo",
+  "squadId": 7,
+  "position": "MID",
+  "price": 5.6,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.2,
+  "roundsSelected": {
+   "1": 0.2
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 6
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 188,
+  "firstName": "Carlos Henrique",
+  "lastName": "Casimiro",
+  "knownName": "Casemiro",
+  "squadId": 7,
+  "position": "MID",
+  "price": 6.3,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 2,
+  "roundsSelected": {
+   "1": 2
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 6
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 190,
+  "firstName": "Lucas",
+  "lastName": "Tolentino Coelho de Lima",
+  "knownName": "Lucas Paquetá",
+  "squadId": 7,
+  "position": "MID",
+  "price": 6.5,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.5,
+  "roundsSelected": {
+   "1": 0.5
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 6
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 195,
+  "firstName": "João Paulo",
+  "lastName": "Moreira Fernandes",
+  "knownName": "João Paulo",
+  "squadId": 8,
+  "position": "MID",
+  "price": 4.6,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 13
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 196,
+  "firstName": "Jair",
+  "lastName": "Semedo Monteiro",
+  "knownName": "Yannick Semedo",
+  "squadId": 8,
+  "position": "MID",
+  "price": 4.7,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 13
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 198,
+  "firstName": "Kevin Lenini",
+  "lastName": "Gonçalves Pereira de Pina",
+  "knownName": "Kevin Pina",
+  "squadId": 8,
+  "position": "MID",
+  "price": 4.7,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 13
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 199,
+  "firstName": "Steven",
+  "lastName": "Moreira",
+  "knownName": "Steven Moreira",
+  "squadId": 8,
+  "position": "DEF",
+  "price": 3.9,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 13
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 200,
+  "firstName": "Wagner Fabrício",
+  "lastName": "Cardoso de Pina",
+  "knownName": "Wagner Pina",
+  "squadId": 8,
+  "position": "DEF",
+  "price": 3.8,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 13
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 201,
+  "firstName": "Roberto Carlos",
+  "lastName": "Lopes",
+  "knownName": "Pico",
+  "squadId": 8,
+  "position": "DEF",
+  "price": 3.7,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 13
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 202,
+  "firstName": "Kelvin Spencer",
+  "lastName": "Pires",
+  "knownName": "Kelvin Pires",
+  "squadId": 8,
+  "position": "DEF",
+  "price": 3.6,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 13
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 203,
+  "firstName": "Sidny",
+  "lastName": "Lopes Cabral",
+  "knownName": "Sidny Cabral",
+  "squadId": 8,
+  "position": "DEF",
+  "price": 3.5,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.2,
+  "roundsSelected": {
+   "1": 0.2
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 13
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 205,
+  "firstName": "Edilson Alberto",
+  "lastName": "Monteiro Sanches Borges",
+  "knownName": "Diney",
+  "squadId": 8,
+  "position": "DEF",
+  "price": 3.5,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 13
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 206,
+  "firstName": "Ryan Isaac",
+  "lastName": "Mendes da Graça",
+  "knownName": "Ryan Mendes",
+  "squadId": 8,
+  "position": "FWD",
+  "price": 4.9,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 13
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 207,
+  "firstName": "Jovane Eduardo",
+  "lastName": "Borges Cabral",
+  "knownName": "Jovane Cabral",
+  "squadId": 8,
+  "position": "FWD",
+  "price": 4.9,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 13
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 208,
+  "firstName": "Dailon",
+  "lastName": "Rocha Livramento do Rosário",
+  "knownName": "Dailon Livramento",
+  "squadId": 8,
+  "position": "FWD",
+  "price": 4.9,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 13
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 209,
+  "firstName": "Nuno Miguel",
+  "lastName": "da Costa Jóia",
+  "knownName": "Nuno da Costa",
+  "squadId": 8,
+  "position": "FWD",
+  "price": 4.7,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 13
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 210,
+  "firstName": "Garry",
+  "lastName": "Mendes Rodrigues",
+  "knownName": "Garry Rodrigues",
+  "squadId": 8,
+  "position": "FWD",
+  "price": 4.7,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 13
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 211,
+  "firstName": "Willy Johnson",
+  "lastName": "Semedo Afonso",
+  "knownName": "Willy Semedo",
+  "squadId": 8,
+  "position": "FWD",
+  "price": 4.5,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 13
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 214,
+  "firstName": "Josimar José",
+  "lastName": "Évora Dias",
+  "knownName": "Vozinha",
+  "squadId": 8,
+  "position": "GK",
+  "price": 3.9,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 13
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 215,
+  "firstName": "Carlos Joaquim",
+  "lastName": "Antunes dos Santos",
+  "knownName": "CJ dos Santos",
+  "squadId": 8,
+  "position": "GK",
+  "price": 3.6,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 13
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 216,
+  "firstName": "Márcio Salomão",
+  "lastName": "Brazão da Rosa",
+  "knownName": "Márcio da Rosa",
+  "squadId": 8,
+  "position": "GK",
+  "price": 3.5,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.2,
+  "roundsSelected": {
+   "1": 0.2
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 13
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 217,
+  "firstName": "Telmo Emanuel",
+  "lastName": "Gomes Arcanjo",
+  "knownName": "Telmo Arcanjo",
+  "squadId": 8,
+  "position": "MID",
+  "price": 4.9,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 13
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 218,
+  "firstName": "Deroy",
+  "lastName": "d'Encarnação Duarte",
+  "knownName": "Deroy Duarte",
+  "squadId": 8,
+  "position": "MID",
+  "price": 4.9,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 13
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 219,
+  "firstName": "Laros Michael",
+  "lastName": "d'Encarnação  Duarte",
+  "knownName": "Laros Duarte",
+  "squadId": 8,
+  "position": "MID",
+  "price": 5.1,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 13
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 1315,
+  "firstName": "Facundo",
+  "lastName": "Cambeses",
+  "knownName": null,
+  "squadId": 2,
+  "position": "GK",
+  "price": 4,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 1316,
+  "firstName": "Walter",
+  "lastName": "Benítez",
+  "knownName": null,
+  "squadId": 2,
+  "position": "GK",
+  "price": 4.5,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 1317,
+  "firstName": "Santiago",
+  "lastName": "Beltrán",
+  "knownName": null,
+  "squadId": 2,
+  "position": "GK",
+  "price": 4,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 1318,
+  "firstName": "Lisandro",
+  "lastName": "Martínez",
+  "knownName": null,
+  "squadId": 2,
+  "position": "DEF",
+  "price": 4.6,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 2.8,
+  "roundsSelected": {
+   "1": 2.8
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 1319,
+  "firstName": "Germán",
+  "lastName": "Pezzella",
+  "knownName": null,
+  "squadId": 2,
+  "position": "DEF",
+  "price": 4.2,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 1320,
+  "firstName": "Facundo",
+  "lastName": "Medina",
+  "knownName": null,
+  "squadId": 2,
+  "position": "DEF",
+  "price": 4,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.5,
+  "roundsSelected": {
+   "1": 0.5
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 1321,
+  "firstName": "Zaid",
+  "lastName": "Romero",
+  "knownName": null,
+  "squadId": 2,
+  "position": "DEF",
+  "price": 3.5,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0.3,
+  "roundsSelected": {
+   "1": 0.3
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 1322,
+  "firstName": "Lautaro",
+  "lastName": "Di Lollo",
+  "knownName": null,
+  "squadId": 2,
+  "position": "DEF",
+  "price": 3.5,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 1323,
+  "firstName": "Gonzalo",
+  "lastName": "Montiel",
+  "knownName": null,
+  "squadId": 2,
+  "position": "DEF",
+  "price": 4.3,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.3,
+  "roundsSelected": {
+   "1": 0.3
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 1324,
+  "firstName": "Kevin",
+  "lastName": "Mac Allister",
+  "knownName": null,
+  "squadId": 2,
+  "position": "DEF",
+  "price": 3.8,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 1325,
+  "firstName": "Leonardo",
+  "lastName": "Balerdi",
+  "knownName": null,
+  "squadId": 2,
+  "position": "DEF",
+  "price": 4,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0.2,
+  "roundsSelected": {
+   "1": 0.2
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 1326,
+  "firstName": "Giovani",
+  "lastName": "Lo Celso",
+  "knownName": null,
+  "squadId": 2,
+  "position": "MID",
+  "price": 6.2,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 1327,
+  "firstName": "Emiliano",
+  "lastName": "Buendía",
+  "knownName": null,
+  "squadId": 2,
+  "position": "MID",
+  "price": 6.5,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 1328,
+  "firstName": "Aníbal",
+  "lastName": "Moreno",
+  "knownName": null,
+  "squadId": 2,
+  "position": "MID",
+  "price": 5,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 1329,
+  "firstName": "Equi",
+  "lastName": "Fernández",
+  "knownName": null,
+  "squadId": 2,
+  "position": "MID",
+  "price": 5,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0.2,
+  "roundsSelected": {
+   "1": 0.2
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 1330,
+  "firstName": "Guido",
+  "lastName": "Rodríguez",
+  "knownName": null,
+  "squadId": 2,
+  "position": "MID",
+  "price": 5.6,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 1331,
+  "firstName": "Alan",
+  "lastName": "Varela",
+  "knownName": null,
+  "squadId": 2,
+  "position": "MID",
+  "price": 5,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 1332,
+  "firstName": "Tomás",
+  "lastName": "Aranda",
+  "knownName": null,
+  "squadId": 2,
+  "position": "MID",
+  "price": 4.3,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 1333,
+  "firstName": "Nicolás",
+  "lastName": "Domínguez",
+  "knownName": null,
+  "squadId": 2,
+  "position": "MID",
+  "price": 5,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 1334,
+  "firstName": "Claudio",
+  "lastName": "Echeverri",
+  "knownName": null,
+  "squadId": 2,
+  "position": "MID",
+  "price": 5.5,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 1335,
+  "firstName": "Matías",
+  "lastName": "Soulé",
+  "knownName": null,
+  "squadId": 2,
+  "position": "MID",
+  "price": 6.2,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 1336,
+  "firstName": "Nicolás",
+  "lastName": "Capaldo",
+  "knownName": null,
+  "squadId": 2,
+  "position": "MID",
+  "price": 5,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 1337,
+  "firstName": "Milton",
+  "lastName": "Delgado",
+  "knownName": null,
+  "squadId": 2,
+  "position": "MID",
+  "price": 4.2,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 1338,
+  "firstName": "Lautaro",
+  "lastName": "Martínez",
+  "knownName": "Lautaro Martínez",
+  "squadId": 2,
+  "position": "FWD",
+  "price": 8.8,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 3.9,
+  "roundsSelected": {
+   "1": 3.9
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 1339,
+  "firstName": "Mateo",
+  "lastName": "Pellegrino",
+  "knownName": null,
+  "squadId": 2,
+  "position": "FWD",
+  "price": 5,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0.2,
+  "roundsSelected": {
+   "1": 0.2
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 1340,
+  "firstName": "Santiago",
+  "lastName": "Castro",
+  "knownName": null,
+  "squadId": 2,
+  "position": "FWD",
+  "price": 6,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 1341,
+  "firstName": "Dennis",
+  "lastName": "Hadzikadunic",
+  "knownName": null,
+  "squadId": 6,
+  "position": "DEF",
+  "price": 3.7,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 3
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 1342,
+  "firstName": "Ermin",
+  "lastName": "Mahmic",
+  "knownName": null,
+  "squadId": 6,
+  "position": "MID",
+  "price": 4.2,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 3
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 1343,
+  "firstName": "Weverton",
+  "lastName": "Pereira da Silva",
+  "knownName": "Weverton",
+  "squadId": 7,
+  "position": "GK",
+  "price": 4.5,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 6
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 1345,
+  "firstName": "Alex Sandro",
+  "lastName": "Lobo da Silva",
+  "knownName": "Alex Sandro",
+  "squadId": 7,
+  "position": "DEF",
+  "price": 4.5,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.7,
+  "roundsSelected": {
+   "1": 0.7
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 6
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 1346,
+  "firstName": "Wesley Vinícius",
+  "lastName": "França Lima",
+  "knownName": "Wesley",
+  "squadId": 7,
+  "position": "DEF",
+  "price": 4.5,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0.5,
+  "roundsSelected": {
+   "1": 0.5
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 6
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 1361,
+  "firstName": "Bruno",
+  "lastName": "Guimarães Rodriguez Moura",
+  "knownName": "Bruno Guimarães",
+  "squadId": 7,
+  "position": "MID",
+  "price": 6.8,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 2,
+  "roundsSelected": {
+   "1": 2
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 6
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 1366,
+  "firstName": "Raphael",
+  "lastName": "Dias Belloli",
+  "knownName": "Raphinha",
+  "squadId": 7,
+  "position": "MID",
+  "price": 8.2,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 22.4,
+  "roundsSelected": {
+   "1": 22.4
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 6
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 1369,
+  "firstName": "Neymar",
+  "lastName": "da Silva Santos Júnior",
+  "knownName": "Neymar",
+  "squadId": 7,
+  "position": "MID",
+  "price": 7.2,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 3.1,
+  "roundsSelected": {
+   "1": 3.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 6
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 1522,
+  "firstName": "Thibaut",
+  "lastName": "Courtois",
+  "knownName": null,
+  "squadId": 5,
+  "position": "GK",
+  "price": 4.9,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 12.9,
+  "roundsSelected": {
+   "1": 12.9
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 14
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 1523,
+  "firstName": "Mike",
+  "lastName": "Penders",
+  "knownName": null,
+  "squadId": 5,
+  "position": "GK",
+  "price": 3.5,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.7,
+  "roundsSelected": {
+   "1": 0.7
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 14
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 1524,
+  "firstName": "Hans",
+  "lastName": "Vanaken",
+  "knownName": null,
+  "squadId": 5,
+  "position": "MID",
+  "price": 5.5,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 14
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 1525,
+  "firstName": "Matias",
+  "lastName": "Fernandez-Pardo",
+  "knownName": null,
+  "squadId": 5,
+  "position": "FWD",
+  "price": 5.6,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 14
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 1526,
+  "firstName": "Leandro",
+  "lastName": "Trossard",
+  "knownName": null,
+  "squadId": 5,
+  "position": "MID",
+  "price": 6.6,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 2.4,
+  "roundsSelected": {
+   "1": 2.4
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 14
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 1527,
+  "firstName": "Diego",
+  "lastName": "Moreira",
+  "knownName": null,
+  "squadId": 5,
+  "position": "MID",
+  "price": 4.7,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 14
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 1528,
+  "firstName": "Ianique",
+  "lastName": "dos Santos Tavares",
+  "knownName": "Stopira",
+  "squadId": 8,
+  "position": "DEF",
+  "price": 3.5,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 13
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 1529,
+  "firstName": "Logan Evans",
+  "lastName": "Costa",
+  "knownName": "Logan Costa",
+  "squadId": 8,
+  "position": "DEF",
+  "price": 3.5,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 13
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 1530,
+  "firstName": "Jamiro Gregory",
+  "lastName": "Monteiro Alvarenga",
+  "knownName": "Jamiro Monteiro",
+  "squadId": 8,
+  "position": "MID",
+  "price": 4.6,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 13
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 1531,
+  "firstName": "Hélio Sandro",
+  "lastName": "Oliveira Alves Varela",
+  "knownName": "Hélio Varela",
+  "squadId": 8,
+  "position": "MID",
+  "price": 4.9,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 13
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 1532,
+  "firstName": "Gilson",
+  "lastName": "Benchimol Tavares",
+  "knownName": "Gilson Benchimol",
+  "squadId": 8,
+  "position": "MID",
+  "price": 5,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.7,
+  "roundsSelected": {
+   "1": 0.7
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 13
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 2001,
+  "firstName": "Joe",
+  "lastName": "Gauci",
+  "knownName": null,
+  "squadId": 3,
+  "position": "GK",
+  "price": 3.9,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 8
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 2002,
+  "firstName": "Harry",
+  "lastName": "Souttar",
+  "knownName": null,
+  "squadId": 3,
+  "position": "DEF",
+  "price": 4.1,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.2,
+  "roundsSelected": {
+   "1": 0.2
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 8
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 2003,
+  "firstName": "Cameron",
+  "lastName": "Devlin",
+  "knownName": null,
+  "squadId": 3,
+  "position": "MID",
+  "price": 4.7,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 8
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 2004,
+  "firstName": "Jackson",
+  "lastName": "Irvine",
+  "knownName": null,
+  "squadId": 3,
+  "position": "MID",
+  "price": 5.6,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 8
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 2005,
+  "firstName": "Mathew",
+  "lastName": "Leckie",
+  "knownName": null,
+  "squadId": 3,
+  "position": "MID",
+  "price": 4.7,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 8
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 2006,
+  "firstName": "Mohamed",
+  "lastName": "Touré",
+  "knownName": "Mohamed Touré",
+  "squadId": 3,
+  "position": "FWD",
+  "price": 5,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 1,
+  "roundsSelected": {
+   "1": 1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 8
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 2007,
+  "firstName": "Tete",
+  "lastName": "Yengi",
+  "knownName": null,
+  "squadId": 3,
+  "position": "FWD",
+  "price": 4.3,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 8
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 2008,
+  "firstName": "Brandon",
+  "lastName": "Borrello",
+  "knownName": null,
+  "squadId": 3,
+  "position": "FWD",
+  "price": 4.4,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 8
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 2045,
+  "firstName": "Abdelatif",
+  "lastName": "Ramdane",
+  "knownName": null,
+  "squadId": 1,
+  "position": "GK",
+  "price": 4,
+  "status": "transferred",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 2046,
+  "firstName": "Oussama",
+  "lastName": "Benbot",
+  "knownName": null,
+  "squadId": 1,
+  "position": "GK",
+  "price": 4.2,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 2047,
+  "firstName": "Samir",
+  "lastName": "Chergui",
+  "knownName": null,
+  "squadId": 1,
+  "position": "DEF",
+  "price": 4,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.2,
+  "roundsSelected": {
+   "1": 0.2
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 2048,
+  "firstName": "Mohamed",
+  "lastName": "Tougaï",
+  "knownName": null,
+  "squadId": 1,
+  "position": "DEF",
+  "price": 4,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.2,
+  "roundsSelected": {
+   "1": 0.2
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 2049,
+  "firstName": "Nabil",
+  "lastName": "Bentaleb",
+  "knownName": null,
+  "squadId": 1,
+  "position": "MID",
+  "price": 5.5,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 2050,
+  "firstName": "Cristian",
+  "lastName": "Volpato",
+  "knownName": null,
+  "squadId": 3,
+  "position": "MID",
+  "price": 6,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 8
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 2066,
+  "firstName": "Jaouen",
+  "lastName": "Hadjam",
+  "knownName": null,
+  "squadId": 1,
+  "position": "DEF",
+  "price": 3.8,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 19
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 2067,
+  "firstName": "Mladen",
+  "lastName": "Jurkas",
+  "knownName": null,
+  "squadId": 6,
+  "position": "GK",
+  "price": 3.5,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 3.3,
+  "roundsSelected": {
+   "1": 3.3
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 3
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 2073,
+  "firstName": "Éderson José",
+  "lastName": "dos Santos Lourenço da Silva",
+  "knownName": "Éderson",
+  "squadId": 7,
+  "position": "MID",
+  "price": 6.3,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0.1,
+  "roundsSelected": {
+   "1": 0.1
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 6
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ },
+ {
+  "id": 2075,
+  "firstName": "Dejan",
+  "lastName": "Ljubicic",
+  "knownName": null,
+  "squadId": 4,
+  "position": "MID",
+  "price": 5,
+  "status": "playing",
+  "matchStatus": null,
+  "percentSelected": 0,
+  "roundsSelected": {
+   "1": 0
+  },
+  "stats": {
+   "totalPoints": 0,
+   "avgPoints": 0,
+   "form": 0,
+   "lastRoundPoints": 0,
+   "roundPoints": [],
+   "nextFixtureFromActiveRound": null,
+   "nextFixtureFromScheduledRound": 20
+  },
+  "oneToWatch": false,
+  "oneToWatchText": null,
+  "qualificationRoundIds": [],
+  "fifaId": null
+ }
+]

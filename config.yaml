@@ -1,0 +1,60 @@
+# FIFA World Cup Fantasy 2026 — configuration.
+# Everything here is free to use. No keys required for the default pipeline.
+
+# --- Official game data (public, no auth). The backbone of the whole tool. ---
+official:
+  players_url: "https://play.fifa.com/json/fantasy/players.json"
+  rounds_url:  "https://play.fifa.com/json/fantasy/rounds.json"
+  squads_url:  "https://play.fifa.com/json/fantasy/squads_fifa.json"  # stale/unused; kept for reference
+  timeout_sec: 30
+  retries: 3
+
+# --- Free news sources (RSS, no keys). Optional supplement to sharpen p_start. ---
+news:
+  enabled: true
+  rss_feeds:
+    - "https://feeds.bbci.co.uk/sport/football/rss.xml"
+    # add Sky/ESPN/Goal RSS URLs here (verified at build time)
+  google_news_template: "https://news.google.com/rss/search?q={query}&hl=en-US&gl=US&ceid=US:en"
+  request_interval_sec: 1.0      # polite throttle
+  cache_minutes: 30
+  drop_older_than_hours: 48
+  # Predicted-XI scrape targets (selectors live in sources.py, wrapped in try/except).
+  lineup_sites:
+    - name: "fantasyfootballscout"
+      url: "https://www.fantasyfootballscout.co.uk/team-news/"
+    # add Rotowire / SportsGambler WC predicted-XI pages here
+
+# --- Team strength. Free Elo is the default; paid odds API is an optional slot. ---
+strength:
+  source: "elo"                  # "elo" (free) | "odds" (optional, needs key)
+  elo_url: "http://api.clubelo.com/"   # free; national-team Elo via eloratings.net scrape fallback
+  eloratings_url: "https://www.eloratings.net/"
+  odds_api_key: ""               # leave blank for free mode
+  home_advantage_goals: 0.0      # neutral-ish at a World Cup (mostly neutral venues)
+
+# --- LLM extraction is OPT-IN. Default keyword path costs nothing. ---
+extract:
+  llm_extract: false             # set true only if you add your own ANTHROPIC_API_KEY
+  model: "claude-haiku-4-5"      # cheap text->JSON (verified via claude-api skill)
+  max_headlines_per_call: 120
+
+# --- Player-state trust weights (higher = more authoritative). ---
+trust_weights:
+  official: 1.0
+  lineup: 0.8
+  major_news: 0.7                # BBC / Sky / ESPN
+  google_news: 0.5
+  low: 0.3
+
+state:
+  injury_doubt_decay_hours: 72   # un-reinforced doubts decay back toward baseline
+  conservatism_floor: 0.5        # one low-trust negative can't drop a nailed starter below this
+
+# --- Candidate watchlist beyond the user's squad (top-N by xPts auto-added too). ---
+watchlist_size: 60
+
+# --- Daily-run scheduling (used by `main.py schedule`). ---
+schedule:
+  normal_hour: 6                 # run daily at 06:00 local
+  pre_deadline_hourly_window_h: 24  # tighten to hourly within 24h of a deadline

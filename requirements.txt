@@ -1,0 +1,6 @@
+# Free, open-source dependencies — the full default pipeline runs on just these.
+requests>=2.31
+feedparser>=6.0
+beautifulsoup4>=4.12
+pulp>=2.7
+pyyaml>=6.0
