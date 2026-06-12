@@ -41,6 +41,12 @@ def render_squad(gd: GameData, ids: list[int], horizon: dict[int, float],
     total_price = sum(by_id[i].price for i in ids)
     total_hv = sum(horizon.get(i, 0.0) for i in ids)
     out = [f"\n## {title}", f"_£{total_price:.1f}m · horizon value {total_hv:.1f}_", "",
+           "**Your 15-player squad must include:**",
+           "- 2 Goalkeepers",
+           "- 5 Defenders",
+           "- 5 Midfielders",
+           "- 3 Forwards",
+           "",
            "| Pos | Player | Team | £ | Own% | Horizon |", "|---|---|---|--:|--:|--:|"]
     for i in rows:
         p = by_id[i]

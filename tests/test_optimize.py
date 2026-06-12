@@ -212,3 +212,58 @@ def test_transfer_zero_changes_when_squad_already_optimal():
     assert res is not None
     assert res.best.gross_gain == pytest.approx(0.0, abs=1e-6)
     assert res.best.n_transfers == 0
+
+
+def test_select_xi_rejects_loose_invalid_formations():
+    """Verify that select_xi never returns an invalid formation (like 5-2-3) even if the xpts are highly skewed.
+
+    If 5 DEFs are extremely valuable and 3 FWDs are moderately valuable, a loose range solver would
+    choose 5-2-3. The strict solver must choose a valid formation like 5-3-2.
+    """
+    players = make_pool()
+    horizon = make_horizon(players)
+    squad_ids = optimize.pick(players, horizon, budget=BUDGET, country_cap=COUNTRY_CAP)
+    by_id = {p.id: p for p in players}
+    squad_players = [by_id[i] for i in squad_ids]
+
+    # Ensure we have a squad with exactly 2 GK, 5 DEF, 5 MID, 3 FWD
+    assert sum(1 for p in squad_players if p.position == "GK") == 2
+    assert sum(1 for p in squad_players if p.position == "DEF") == 5
+    assert sum(1 for p in squad_players if p.position == "MID") == 5
+    assert sum(1 for p in squad_players if p.position == "FWD") == 3
+
+    # Define next_xpts that would favor 5-2-3 if loose ranges were used
+    next_xpts = {}
+    gks = [p for p in squad_players if p.position == "GK"]
+    for i, p in enumerate(gks):
+        next_xpts[p.id] = 10.0 if i == 0 else 0.0
+    for p in squad_players:
+        if p.position == "DEF":
+            next_xpts[p.id] = 100.0  # highly valuable
+        elif p.position == "MID":
+            next_xpts[p.id] = 1.0    # least valuable
+        elif p.position == "FWD":
+            next_xpts[p.id] = 10.0   # moderately valuable
+
+    sel = optimize.select_xi(squad_players, next_xpts)
+    assert sel is not None
+    assert sel.formation != "5-2-3", "Invalid formation 5-2-3 was selected!"
+    assert sel.formation in ("5-3-2", "5-4-1"), f"Expected a valid 5-at-the-back formation, got {sel.formation}"
+
+
+def test_gamedata_free_transfers(gd):
+    # Test round-based free transfers resolution
+    orig_round = gd.current_round_id
+    try:
+        gd.current_round_id = 2
+        assert gd.free_transfers() == 2
+        gd.current_round_id = 4
+        assert gd.free_transfers() == 99
+        gd.current_round_id = 5
+        assert gd.free_transfers() == 4
+        gd.current_round_id = 7
+        assert gd.free_transfers() == 5
+        gd.current_round_id = 8
+        assert gd.free_transfers() == 6
+    finally:
+        gd.current_round_id = orig_round

@@ -145,6 +145,9 @@ class GameData:
     def country_cap(self) -> int:
         return C.COUNTRY_CAP_BY_STAGE.get(self.current_stage, 3)
 
+    def free_transfers(self) -> int:
+        return C.FREE_TRANSFERS_BY_ROUND.get(self.current_round_id, 2)
+
 
 # ---------------------------------------------------------------------------
 # Normalization of the official payloads

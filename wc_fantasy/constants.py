@@ -43,7 +43,7 @@ TACKLES_PER_POINT = 3           # +1 every 3 tackles
 YELLOW_CARD_PTS = -1
 RED_CARD_PTS = -2
 OWN_GOAL_PTS = -2
-PENALTY_MISS_PTS = -2           # VERIFY: not stated in public guides
+PENALTY_MISS_PTS = 0            # Aramco guidelines: no penalty miss point deduction
 FREEKICK_GOAL_BONUS = 1         # +1 bonus for a direct free-kick goal
 
 # Scouting bonus: +2 when an <5%-owned player returns 4+ points in a match.
@@ -77,10 +77,10 @@ BUDGET_BY_STAGE = {
 COUNTRY_CAP_BY_STAGE = {
     "GROUP": 3,
     "R32": 3,
-    "R16": 4,   # VERIFY
-    "QF": 5,    # VERIFY
-    "SF": 6,    # VERIFY
-    "F": 6,     # VERIFY
+    "R16": 4,
+    "QF": 5,
+    "SF": 6,
+    "F": 8,     # Final stage: max 8 players from a single country
 }
 
 # Official players.json `matchStatus` -> baseline p_start. This is a confirmed-lineup
@@ -91,21 +91,32 @@ MATCHSTATUS_P_START = {"start": 1.0, "sub": 0.15, "not_in_squad": 0.0}
 DEFAULT_P_START = 0.7          # status 'playing' but no lineup confirmed yet
 
 FREE_TRANSFERS_DEFAULT = 2      # per matchday (group). Knockout rounds may differ. VERIFY
+FREE_TRANSFERS_BY_ROUND = {
+    1: 99,  # Pre-tournament: unlimited
+    2: 2,   # MD2: 2
+    3: 2,   # MD3: 2
+    4: 99,  # R32 (MD4): Unlimited
+    5: 4,   # R16 (MD5): 4
+    6: 4,   # QF (MD6): 4
+    7: 5,   # SF (MD7): 5
+    8: 6,   # F (MD8): 6
+}
 TRANSFER_HIT_PTS = -3           # per extra transfer beyond free
 CAPTAIN_MULTIPLIER = 2
 
 # ---------------------------------------------------------------------------
-# Formations: a valid XI must satisfy these per-position ranges (GK always 1).
-# This range check is more robust than enumerating; ALLOWED_FORMATIONS is the
-# canonical list for display/labelling.
+# Formations: a valid XI must satisfy one of the 7 officially allowed formations.
 # ---------------------------------------------------------------------------
 
-FORMATION_RANGES = {"GK": (1, 1), "DEF": (3, 5), "MID": (2, 5), "FWD": (1, 3)}
-
-ALLOWED_FORMATIONS = (
-    "3-4-3", "3-5-2", "4-3-3", "4-4-2", "4-5-1",
-    "5-3-2", "5-4-1", "5-2-3", "3-3-4",  # VERIFY exact allowed set
-)
+ALLOWED_FORMATION_COUNTS = {
+    "4-4-2": {"DEF": 4, "MID": 4, "FWD": 2},
+    "4-3-3": {"DEF": 4, "MID": 3, "FWD": 3},
+    "4-5-1": {"DEF": 4, "MID": 5, "FWD": 1},
+    "3-4-3": {"DEF": 3, "MID": 4, "FWD": 3},
+    "3-5-2": {"DEF": 3, "MID": 5, "FWD": 2},
+    "5-4-1": {"DEF": 5, "MID": 4, "FWD": 1},
+    "5-3-2": {"DEF": 5, "MID": 3, "FWD": 2},
+}
 
 DEFAULT_FORMATION = "4-4-2"
 

@@ -57,10 +57,13 @@ def _load_priors_yaml() -> dict | None:
 # --------------------------------------------------------------------------- context
 class Context:
     def __init__(self, offline: bool = False, with_news: bool = False, n_sims: int = 4000,
-                 sim_seed: int | None = C.SIM_SEED):
+                 sim_seed: int | None = C.SIM_SEED, free_transfers_override: int | None = None):
         self.cfg = load_config()
         self.gd: GameData = load_game_data(self.cfg, offline=offline)
         self.priors = xptsmod.build_priors(self.gd.players, _load_priors_yaml())
+        self.free_transfers = (free_transfers_override
+                               if free_transfers_override is not None
+                               else self.gd.free_transfers())
         self.news_events: list = []
         self.news_stale: dict = {}
 
@@ -143,7 +146,8 @@ def cmd_transfer(ctx: Context) -> str:
         return (report.header(gd) +
                 "\n\n_No saved squad to transfer from. Run `set-squad --ids ...` first._")
     res = optimize.transfer(gd.players, ctx.horizon, ids,
-                            budget=gd.budget(), country_cap=gd.country_cap())
+                            budget=gd.budget(), country_cap=gd.country_cap(),
+                            free_transfers=ctx.free_transfers)
     parts = [report.header(gd), report.render_squad(gd, ids, ctx.horizon, title="Your squad")]
     if res:
         parts.append(report.render_transfers(gd, res, ctx.horizon))
@@ -348,6 +352,8 @@ def build_parser() -> argparse.ArgumentParser:
     ap.add_argument("--offline", action="store_true", help="use cached snapshots/fixtures only")
     ap.add_argument("--reseed", action="store_true",
                     help="use fresh random Monte-Carlo draws (default is a fixed seed for reproducible data)")
+    ap.add_argument("--free-transfers", type=int, default=None,
+                    help="override number of free transfers for the current matchday")
     sub = ap.add_subparsers(dest="command", required=True)
     for name in ("update", "pick", "recommend", "transfer", "status", "simulate", "schedule"):
         sub.add_parser(name)
@@ -381,9 +387,11 @@ def main(argv: list[str] | None = None) -> int:
     seed = None if args.reseed else C.SIM_SEED
     try:
         if args.command == "update":
-            ctx = Context(offline=args.offline, with_news=True, n_sims=10000, sim_seed=seed)
+            ctx = Context(offline=args.offline, with_news=True, n_sims=10000, sim_seed=seed,
+                          free_transfers_override=args.free_transfers)
         else:
-            ctx = Context(offline=args.offline, sim_seed=seed)
+            ctx = Context(offline=args.offline, sim_seed=seed,
+                          free_transfers_override=args.free_transfers)
     except FetchError as exc:
         print(f"FETCH ERROR: {exc}\nTry --offline to use cached data.", file=sys.stderr)
         return 2

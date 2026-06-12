@@ -134,10 +134,18 @@ def select_xi(squad_players: list[Player], next_xpts: dict[int, float]) -> Optio
 
     prob += pulp.lpSum(next_xpts.get(p.id, 0.0) * y[p.id] for p in squad_players)
     prob += pulp.lpSum(y.values()) == C.XI_SIZE
-    for pos, (lo, hi) in C.FORMATION_RANGES.items():
+
+    # Formation selection binary variables
+    form_vars = {form: pulp.LpVariable(f"form_{form}", cat="Binary") for form in C.ALLOWED_FORMATION_COUNTS}
+    prob += pulp.lpSum(form_vars.values()) == 1
+
+    # Constrain position counts to match the chosen formation
+    for pos in ("GK", "DEF", "MID", "FWD"):
         cnt = pulp.lpSum(y[p.id] for p in squad_players if p.position == pos)
-        prob += cnt >= lo
-        prob += cnt <= hi
+        if pos == "GK":
+            prob += cnt == 1
+        else:
+            prob += cnt == pulp.lpSum(C.ALLOWED_FORMATION_COUNTS[form][pos] * form_vars[form] for form in C.ALLOWED_FORMATION_COUNTS)
 
     status = prob.solve(pulp.PULP_CBC_CMD(msg=0))
     if pulp.LpStatus[status] != "Optimal":
