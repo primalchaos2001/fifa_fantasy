@@ -267,3 +267,90 @@ def test_gamedata_free_transfers(gd):
         assert gd.free_transfers() == 6
     finally:
         gd.current_round_id = orig_round
+
+
+def test_select_xi_forced_formation():
+    players = make_pool()
+    horizon = make_horizon(players)
+    squad_ids = optimize.pick(players, horizon, budget=BUDGET, country_cap=COUNTRY_CAP)
+    by_id = {p.id: p for p in players}
+    squad_players = [by_id[i] for i in squad_ids]
+    next_xpts = {p.id: 1.0 + p.id * 0.01 for p in squad_players}
+
+    # Force 3-5-2
+    sel = optimize.select_xi(squad_players, next_xpts, formation="3-5-2")
+    assert sel is not None
+    assert sel.formation == "3-5-2"
+    counts = {pos: sum(1 for i in sel.xi_ids if by_id[i].position == pos) for pos in ("GK", "DEF", "MID", "FWD")}
+    assert counts == {"GK": 1, "DEF": 3, "MID": 5, "FWD": 2}
+
+    # Force 5-4-1
+    sel = optimize.select_xi(squad_players, next_xpts, formation="5-4-1")
+    assert sel is not None
+    assert sel.formation == "5-4-1"
+    counts = {pos: sum(1 for i in sel.xi_ids if by_id[i].position == pos) for pos in ("GK", "DEF", "MID", "FWD")}
+    assert counts == {"GK": 1, "DEF": 5, "MID": 4, "FWD": 1}
+
+    # Force invalid formation in select_xi raises ValueError
+    with pytest.raises(ValueError):
+        optimize.select_xi(squad_players, next_xpts, formation="5-2-3")
+
+
+def test_best_replacements_and_drops_for_target():
+    players = make_pool()
+    horizon = make_horizon(players)
+    squad_ids = current_squad_ids(players) # weak 15
+    by_id = {p.id: p for p in players}
+    squad_players = [by_id[i] for i in squad_ids]
+    
+    # 1. Test best_replacements
+    out_id = squad_ids[0]
+    out_p = by_id[out_id]
+    reps = optimize.best_replacements(
+        players, horizon, squad_ids, out_id, budget=BUDGET, country_cap=COUNTRY_CAP, top_n=5
+    )
+    assert len(reps) > 0
+    assert len(reps) <= 5
+    for c in reps:
+        assert c.out_id == out_id
+        in_p = by_id[c.in_id]
+        assert in_p.position == out_p.position
+        assert in_p.status == "playing"
+        assert c.price_delta <= BUDGET - sum(p.price for p in squad_players)
+        
+        # Verify country count check
+        temp_squad = [p for p in squad_players if p.id != out_id] + [in_p]
+        temp_countries = {}
+        for p in temp_squad:
+            temp_countries[p.country] = temp_countries.get(p.country, 0) + 1
+        assert max(temp_countries.values()) <= COUNTRY_CAP
+        
+    # Verify reps are sorted by horizon value descending (using hv_in)
+    for r1, r2 in zip(reps, reps[1:]):
+        assert r2.hv_in <= r1.hv_in
+
+    # 2. Test drops_for_target
+    target_in_id = next(p.id for p in players if p.id not in squad_ids and p.position == "DEF" and p.status == "playing")
+    target_in_p = by_id[target_in_id]
+    
+    drops = optimize.drops_for_target(
+        players, horizon, squad_ids, target_in_id, budget=BUDGET, country_cap=COUNTRY_CAP, top_n=5
+    )
+    assert len(drops) > 0
+    for c in drops:
+        assert c.in_id == target_in_id
+        out_p = by_id[c.out_id]
+        assert out_p.position == target_in_p.position
+        assert out_p.id in squad_ids
+        
+        # Verify budget and country cap
+        temp_squad = [p for p in squad_players if p.id != out_p.id] + [target_in_p]
+        assert sum(p.price for p in temp_squad) <= BUDGET + 1e-6
+        temp_countries = {}
+        for p in temp_squad:
+            temp_countries[p.country] = temp_countries.get(p.country, 0) + 1
+        assert max(temp_countries.values()) <= COUNTRY_CAP
+
+    # Verify drops are sorted by hv_gain descending
+    for d1, d2 in zip(drops, drops[1:]):
+        assert d2.hv_gain <= d1.hv_gain

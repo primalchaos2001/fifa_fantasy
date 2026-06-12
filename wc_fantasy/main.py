@@ -16,6 +16,7 @@ import argparse
 import json
 import sys
 from pathlib import Path
+from typing import Optional
 
 from . import optimize, report
 from . import xpts as xptsmod
@@ -24,7 +25,7 @@ from .sources import (DATA_DIR, load_config, load_game_data, team_xg_lookup, Gam
                       build_news_queries, gather_news)
 from .extract import extract_events
 from .player_state import compute_states, serialize_states, deserialize_states
-from .models import FetchError
+from .models import FetchError, Player
 
 STATE_PATH = DATA_DIR / "state.json"
 PRIORS_PATH = Path(__file__).resolve().parents[1] / "priors.yaml"
@@ -101,14 +102,14 @@ class Context:
 
 
 # --------------------------------------------------------------------------- commands
-def cmd_pick(ctx: Context) -> str:
+def cmd_pick(ctx: Context, formation: str | None = None) -> str:
     gd = ctx.gd
     ids = optimize.pick(gd.players, ctx.horizon,
                         budget=gd.budget(), country_cap=gd.country_cap())
     if not ids:
         return report.header(gd) + "\n\n**No feasible squad found.** Check data/staleness."
     squad_players = [p for p in gd.players if p.id in ids]
-    xi = optimize.select_xi(squad_players, ctx.next_xpts)
+    xi = optimize.select_xi(squad_players, ctx.next_xpts, formation=formation)
     parts = [report.header(gd),
              report.render_squad(gd, ids, ctx.horizon, title="Ideal squad (benchmark)")]
     if xi:
@@ -125,14 +126,14 @@ def _current_squad_ids(ctx: Context) -> list[int] | None:
     return [i for i in ids if i in valid]
 
 
-def cmd_recommend(ctx: Context) -> str:
+def cmd_recommend(ctx: Context, formation: str | None = None) -> str:
     gd = ctx.gd
     ids = _current_squad_ids(ctx)
     if not ids:
         return (report.header(gd) +
                 "\n\n_No saved squad. Run `set-squad --ids ...`, or see `pick` for the ideal team._")
     squad_players = [p for p in gd.players if p.id in ids]
-    xi = optimize.select_xi(squad_players, ctx.next_xpts)
+    xi = optimize.select_xi(squad_players, ctx.next_xpts, formation=formation)
     parts = [report.header(gd), report.render_squad(gd, ids, ctx.horizon, title="Your squad")]
     if xi:
         parts.append(report.render_xi(gd, xi, ctx.next_xpts))
@@ -281,6 +282,80 @@ def _section(full_report: str) -> str:
     return full_report
 
 
+def resolve_player(text: str, players: list) -> Optional[Player]:
+    # try as ID
+    try:
+        pid = int(text.strip())
+        for p in players:
+            if p.id == pid:
+                return p
+    except ValueError:
+        pass
+    
+    # fuzzy matching by name
+    from .extract import _norm
+    target = _norm(text)
+    
+    # Exact match first
+    for p in players:
+        if _norm(p.name) == target:
+            return p
+            
+    # Substring match next
+    matches = [p for p in players if target in _norm(p.name)]
+    if len(matches) == 1:
+        return matches[0]
+    elif len(matches) > 1:
+        # Prefer exact word match if possible
+        word_matches = [p for p in matches if any(target == w for w in _norm(p.name).split())]
+        if len(word_matches) == 1:
+            return word_matches[0]
+        # otherwise return first or none
+        return matches[0]
+        
+    return None
+
+
+def cmd_swap(ctx: Context, out_arg: str | None, in_arg: str | None, top_n: int = 5) -> str:
+    gd = ctx.gd
+    squad_ids = _current_squad_ids(ctx)
+    if not squad_ids:
+        return report.header(gd) + "\n\n_No saved squad. Run `set-squad --ids ...` first._"
+        
+    if out_arg and in_arg:
+        return report.header(gd) + "\n\n_Provide either --out or --in, not both, to identify the swap direction._"
+    if not out_arg and not in_arg:
+        return report.header(gd) + "\n\n_Provide --out <player> (to find replacements) or --in <player> (to find drops)._"
+        
+    if out_arg:
+        p_out = resolve_player(out_arg, gd.players)
+        if not p_out:
+            return report.header(gd) + f"\n\n_Could not resolve out player: {out_arg}_"
+        if p_out.id not in set(squad_ids):
+            return report.header(gd) + f"\n\n_Player {p_out.name} is not in your squad._"
+            
+        candidates = optimize.best_replacements(
+            gd.players, ctx.horizon, squad_ids, p_out.id,
+            budget=gd.budget(), country_cap=gd.country_cap(), top_n=top_n
+        )
+        return report.header(gd) + "\n" + report.render_swaps(gd, candidates, p_out.name, is_out_mode=True)
+        
+    if in_arg:
+        p_in = resolve_player(in_arg, gd.players)
+        if not p_in:
+            return report.header(gd) + f"\n\n_Could not resolve in player: {in_arg}_"
+        if p_in.id in set(squad_ids):
+            return report.header(gd) + f"\n\n_Player {p_in.name} is already in your squad._"
+            
+        candidates = optimize.drops_for_target(
+            gd.players, ctx.horizon, squad_ids, p_in.id,
+            budget=gd.budget(), country_cap=gd.country_cap(), top_n=top_n
+        )
+        return report.header(gd) + "\n" + report.render_swaps(gd, candidates, p_in.name, is_out_mode=False)
+        
+    return ""
+
+
 def cmd_set_squad(ids_arg: str | None, file_arg: str | None) -> str:
     if file_arg:
         with open(file_arg, encoding="utf-8") as fh:
@@ -355,11 +430,29 @@ def build_parser() -> argparse.ArgumentParser:
     ap.add_argument("--free-transfers", type=int, default=None,
                     help="override number of free transfers for the current matchday")
     sub = ap.add_subparsers(dest="command", required=True)
-    for name in ("update", "pick", "recommend", "transfer", "status", "simulate", "schedule"):
-        sub.add_parser(name)
+    
+    sub.add_parser("update")
+    
+    p_pick = sub.add_parser("pick")
+    p_pick.add_argument("--formation", type=str, default=None, help="force starting XI formation (e.g. 3-5-2)")
+    
+    p_rec = sub.add_parser("recommend")
+    p_rec.add_argument("--formation", type=str, default=None, help="force starting XI formation (e.g. 3-5-2)")
+    
+    sub.add_parser("transfer")
+    sub.add_parser("status")
+    sub.add_parser("simulate")
+    sub.add_parser("schedule")
+    
     sq = sub.add_parser("set-squad")
     sq.add_argument("--ids", help="comma-separated player ids")
     sq.add_argument("--file", help="json file with a list of player ids")
+    
+    sw = sub.add_parser("swap")
+    sw.add_argument("--out", type=str, default=None, help="squad player to transfer OUT (name or ID)")
+    sw.add_argument("--in", dest="in_player", type=str, default=None, help="database player to transfer IN (name or ID)")
+    sw.add_argument("--top", type=int, default=5, help="number of candidates to display (default 5)")
+    
     srv = sub.add_parser("serve")
     srv.add_argument("--port", type=int, default=8000, help="HTTP port (default 8000)")
     srv.add_argument("--no-browser", action="store_true", help="don't auto-open the browser")
@@ -401,9 +494,16 @@ def main(argv: list[str] | None = None) -> int:
         "transfer": cmd_transfer, "status": cmd_status, "simulate": cmd_simulate,
         "schedule": cmd_schedule,
     }
-    text = dispatch[args.command](ctx)
+    
+    if args.command in ("pick", "recommend"):
+        text = dispatch[args.command](ctx, formation=args.formation)
+    elif args.command == "swap":
+        text = cmd_swap(ctx, out_arg=args.out, in_arg=args.in_player, top_n=args.top)
+    else:
+        text = dispatch[args.command](ctx)
+        
     print(text)
-    if args.command in ("recommend", "transfer", "pick"):
+    if args.command in ("recommend", "transfer", "pick", "swap"):
         report.save_report(text, args.command)
     return 0
 

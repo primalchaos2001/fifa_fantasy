@@ -12,6 +12,7 @@ from pathlib import Path
 from .sources import GameData, DATA_DIR
 from .optimize import TransferResult, XISelection
 from .models import Player
+from . import constants as C, optimize
 
 REPORT_DIR = DATA_DIR / "reports"
 
@@ -150,7 +151,13 @@ def save_web_json(gd: GameData, horizon: dict[int, float], next_xpts: dict[int, 
         "teams": gd.teams,
         "groups": gd.groups,
         "players": players_list,
-        "advancement": adv_table
+        "advancement": adv_table,
+        "formations": C.ALLOWED_FORMATION_COUNTS,
+        "squad_quota": C.SQUAD_QUOTA,
+        "budget": C.BUDGET_BY_STAGE.get(gd.current_stage, 100.0),
+        "country_cap": C.COUNTRY_CAP_BY_STAGE.get(gd.current_stage, 3),
+        "free_transfers": C.FREE_TRANSFERS_BY_ROUND.get(gd.current_round_id, C.FREE_TRANSFERS_DEFAULT),
+        "transfer_hit": abs(C.TRANSFER_HIT_PTS)
     }
 
     # CI (GitHub Actions) writes the committed docs/data.json that the deployed site serves.
@@ -163,4 +170,31 @@ def save_web_json(gd: GameData, horizon: dict[int, float], next_xpts: dict[int, 
     with open(path, "w", encoding="utf-8") as fh:
         json.dump(data, fh, indent=2, ensure_ascii=False)
     return path
+
+
+def render_swaps(gd: GameData, candidates: list[optimize.SwapCandidate], target_player_name: str, is_out_mode: bool) -> str:
+    by_id = {p.id: p for p in gd.players}
+    out = []
+    if is_out_mode:
+        out.append(f"\n## Direct Replacements for: {target_player_name}")
+        out.append("_Showing affordable, same-position players within country caps, ranked by Horizon Value._\n")
+    else:
+        out.append(f"\n## Drop Candidates to acquire: {target_player_name}")
+        out.append("_Showing same-position squad players you can sell to afford the target within country caps, ranked by Net Gain._\n")
+        
+    if not candidates:
+        out.append("_No feasible swap candidates found._")
+        return "\n".join(out)
+        
+    out.append("| OUT Player | IN Player | Price Δ | HV Gain | Net Gain |")
+    out.append("|---|---|---:|---:|---:|")
+    
+    for c in candidates:
+        p_out = by_id.get(c.out_id)
+        p_in = by_id.get(c.in_id)
+        out_name = f"{p_out.name} ({p_out.country[:3].upper()})" if p_out else str(c.out_id)
+        in_name = f"{p_in.name} ({p_in.country[:3].upper()})" if p_in else str(c.in_id)
+        out.append(f"| {out_name} | {in_name} | {c.price_delta:+.1f}m | {c.hv_gain:+.1f} | {c.net_gain:+.1f} |")
+        
+    return "\n".join(out)
 

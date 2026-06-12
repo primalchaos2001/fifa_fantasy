@@ -228,9 +228,15 @@
                   <span class="stat-label">Manager:</span>
                   <span class="stat-value text-glow" id="stat-manager">-</span>
                 </div>
-                <div class="stat-row">
+                <div class="stat-row" style="align-items: center; justify-content: space-between;">
                   <span class="stat-label">Formation:</span>
-                  <span class="stat-value" id="stat-formation">4-4-2</span>
+                  <div style="display: flex; gap: 8px; align-items: center;">
+                    <span class="stat-value" id="stat-formation" style="display: none;">4-4-2</span>
+                    <select id="formation-select" style="background: rgba(10, 14, 23, 0.8); border: 1px solid var(--border-color); border-radius: 6px; color: var(--text-primary); padding: 4px 8px; font-family: inherit; font-size: 0.85rem; outline: none; cursor: pointer; font-weight: 600;">
+                      <!-- Populated dynamically -->
+                    </select>
+                    <button id="btn-optimal-formation" class="optimal-btn" style="background: rgba(34, 197, 94, 0.15); border: 1px solid var(--accent-green); border-radius: 6px; color: var(--accent-green); padding: 4px 8px; font-size: 0.75rem; font-weight: 700; cursor: pointer; transition: all var(--transition-speed); outline: none; border: 1px solid var(--border-color);">Auto</button>
+                  </div>
                 </div>
                 <div class="stat-row">
                   <span class="stat-label">Expected Points:</span>
@@ -263,29 +269,41 @@
 
         <!-- Tab 4.2: Transfer Planner -->
         <div id="tab-transfers" class="tab-panel">
-          <div class="transfers-container glass-card">
-            <h2>Optimal Transfer Swaps</h2>
-            <p class="panel-subtitle">Calculated based on preference weights and remaining tournament survival rates.</p>
-            
-            <div class="transfers-list-view" id="transfer-moves-list">
-              <!-- Swaps list populated dynamically -->
+          <div class="transfers-layout">
+            <!-- Left: Squad List -->
+            <div class="transfers-squad-container glass-card" style="padding: 24px;">
+              <h2>Select Squad Player</h2>
+              <p class="panel-subtitle" style="margin-bottom: 15px;">Click any player in your squad to see their direct replacement options.</p>
+              <div class="transfers-squad-list" id="transfer-squad-list-view" style="display: flex; flex-direction: column; gap: 8px;">
+                <!-- Populated dynamically -->
+              </div>
             </div>
 
-            <h3 class="margin-title">Marginal Value of Extra Transfers</h3>
-            <div class="table-container">
-              <table class="data-table">
-                <thead>
-                  <tr>
-                    <th>Transfers Made</th>
-                    <th>Gross Point Gain</th>
-                    <th>Hits Applied</th>
-                    <th>Net Point Value</th>
-                  </tr>
-                </thead>
-                <tbody id="transfer-marginal-table">
-                  <!-- Marginal rows populated dynamically -->
-                </tbody>
-              </table>
+            <!-- Right: Recommended Replacements & Marginal Value -->
+            <div class="transfers-replacements-container glass-card" style="padding: 24px;">
+              <h2 id="transfer-replacements-title">Direct Replacement Options</h2>
+              <p class="panel-subtitle" id="transfer-replacements-subtitle" style="margin-bottom: 15px;">Select a squad player from the left panel to list candidates.</p>
+              
+              <div class="transfers-list-view" id="transfer-moves-list" style="margin-bottom: 25px;">
+                <!-- Populated dynamically -->
+              </div>
+
+              <h3 class="margin-title" style="margin-bottom: 10px;">Marginal Value of Extra Transfers</h3>
+              <div class="table-container">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Transfers Made</th>
+                      <th>Gross Point Gain</th>
+                      <th>Hits Applied</th>
+                      <th>Net Point Value</th>
+                    </tr>
+                  </thead>
+                  <tbody id="transfer-marginal-table">
+                    <!-- Marginal rows populated dynamically -->
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </div>
@@ -400,6 +418,85 @@
     </section>
 
   </main>
+
+  <!-- Player Details Modal -->
+  <div id="player-modal" class="modal-backdrop">
+    <div class="modal-content glass-card">
+      <button class="modal-close-btn" id="modal-close">&times;</button>
+      
+      <!-- Modal Header: Player Info Card -->
+      <div class="modal-header-card">
+        <div class="modal-shirt-container">
+          <div class="modal-shirt-icon" id="modal-player-shirt">
+            <span class="shirt-number" id="modal-player-number">-</span>
+          </div>
+          <span class="pos-tag" id="modal-player-pos">-</span>
+        </div>
+        <div class="modal-player-info">
+          <h2 id="modal-player-name">-</h2>
+          <div class="modal-player-subinfo">
+            <span id="modal-player-country">-</span> · 
+            <span id="modal-player-price">-</span> · 
+            <span id="modal-player-own">-</span>
+          </div>
+          <div class="modal-player-status-badge" id="modal-player-status">-</div>
+        </div>
+      </div>
+
+      <!-- Modal Body (Two columns or structured tabs) -->
+      <div class="modal-body-layout">
+        
+        <!-- Column 1: Tactical Formations Analysis -->
+        <div class="modal-column">
+          <h3>Tactical & Formation Analysis</h3>
+          <div class="modal-stat-summary">
+            <div class="modal-stat-box">
+              <span class="label">Current Status</span>
+              <strong id="modal-current-status">-</strong>
+            </div>
+            <div class="modal-stat-box">
+              <span class="label">Next MD xPts</span>
+              <strong id="modal-next-xpts" class="text-green">-</strong>
+            </div>
+            <div class="modal-stat-box">
+              <span class="label">Horizon Value</span>
+              <strong id="modal-horizon-val" class="text-glow">-</strong>
+            </div>
+          </div>
+
+          <h4 style="margin-top: 15px; margin-bottom: 10px; font-size: 0.9rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.5px;">Formation Availability & Role</h4>
+          <div class="formations-grid" id="modal-formations-grid">
+            <!-- Populated dynamically via JS -->
+          </div>
+        </div>
+
+        <!-- Column 2: Specific Transfers Recommendation -->
+        <div class="modal-column">
+          <h3 id="modal-transfer-title">Transfer Analysis</h3>
+          <p class="panel-subtitle" id="modal-transfer-subtitle">Direct replacement options considering budget and country limits.</p>
+          <div class="modal-transfer-list-container">
+            <table class="modal-transfer-table">
+              <thead>
+                <tr>
+                  <th>Player</th>
+                  <th>Price</th>
+                  <th style="text-align: right;">Horizon</th>
+                  <th style="text-align: right;">Net Gain</th>
+                </tr>
+              </thead>
+              <tbody id="modal-transfer-list-body">
+                <!-- Populated dynamically via JS -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast notifications container -->
+  <div id="toast-container" class="toast-container"></div>
 
   <script src="app.js"></script>
 </body>
