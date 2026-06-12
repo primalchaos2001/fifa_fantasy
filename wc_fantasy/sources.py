@@ -380,15 +380,29 @@ def team_xg_lookup(gd: GameData, *, elo_table: Optional[dict[str, float]] = None
     return out
 
 
-def _poisson_1x2(lam_home: float, lam_away: float, max_goals: int = 8) -> tuple[float, float, float]:
-    """Win/draw/loss probabilities from independent Poisson scorelines."""
+def _poisson_1x2(lam_home: float, lam_away: float, max_goals: int = 8, rho: float = -0.13) -> tuple[float, float, float]:
+    """Win/draw/loss probabilities from independent Poisson scorelines with Dixon-Coles adjustment."""
     import math
     def pmf(k, lam):
         return math.exp(-lam) * lam ** k / math.factorial(k)
     pw = pd = pl = 0.0
     for h in range(max_goals + 1):
         for a in range(max_goals + 1):
-            p = pmf(h, lam_home) * pmf(a, lam_away)
+            p_ind = pmf(h, lam_home) * pmf(a, lam_away)
+            
+            # Dixon-Coles tau adjustment factor for low scores
+            tau = 1.0
+            if h == 0 and a == 0:
+                tau = 1.0 - lam_home * lam_away * rho
+            elif h == 0 and a == 1:
+                tau = 1.0 + lam_home * rho
+            elif h == 1 and a == 0:
+                tau = 1.0 + lam_away * rho
+            elif h == 1 and a == 1:
+                tau = 1.0 - rho
+            
+            tau = max(0.0, tau)
+            p = p_ind * tau
             if h > a:
                 pw += p
             elif h == a:
@@ -396,6 +410,7 @@ def _poisson_1x2(lam_home: float, lam_away: float, max_goals: int = 8) -> tuple[
             else:
                 pl += p
     return pw, pd, pl
+
 
 
 # ---------------------------------------------------------------------------

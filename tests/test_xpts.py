@@ -56,6 +56,48 @@ def test_poisson_1x2_perspective_swap():
     assert pd == pytest.approx(pd2, abs=1e-9)
 
 
+def test_poisson_1x2_dixon_coles_rho_zero():
+    # With rho = 0, it should match the independent Poisson calculation exactly
+    pw, pd, pl = sources._poisson_1x2(1.5, 1.0, rho=0.0)
+    
+    # Calculate independent Poisson manually
+    import math
+    def pmf(k, lam):
+        return math.exp(-lam) * lam ** k / math.factorial(k)
+    pw_ind = pd_ind = pl_ind = 0.0
+    for h in range(9):
+        for a in range(9):
+            p = pmf(h, 1.5) * pmf(a, 1.0)
+            if h > a:
+                pw_ind += p
+            elif h == a:
+                pd_ind += p
+            else:
+                pl_ind += p
+    assert pw == pytest.approx(pw_ind, abs=1e-9)
+    assert pd == pytest.approx(pd_ind, abs=1e-9)
+    assert pl == pytest.approx(pl_ind, abs=1e-9)
+
+
+def test_poisson_1x2_dixon_coles_draw_inflation():
+    # Negative rho (like -0.13) should inflate draw probability for low scores
+    pw_ind, pd_ind, pl_ind = sources._poisson_1x2(1.0, 1.0, rho=0.0)
+    pw_dc, pd_dc, pl_dc = sources._poisson_1x2(1.0, 1.0, rho=-0.13)
+    
+    assert pd_dc > pd_ind
+    assert pw_dc < pw_ind
+    assert pl_dc < pl_ind
+    assert 0.999 < pw_dc + pd_dc + pl_dc <= 1.0 + 1e-9
+
+
+def test_poisson_1x2_dixon_coles_negative_tau_clipping():
+    # With very high lambda and negative rho, tau would be negative if not clipped.
+    # Clip validation: check that no probability is negative.
+    pw, pd, pl = sources._poisson_1x2(10.0, 10.0, max_goals=25, rho=-0.15)
+    assert all(p >= 0.0 for p in (pw, pd, pl))
+    assert 0.999 < pw + pd + pl <= 1.0 + 1e-9
+
+
 # ---------------------------------------------------------------------------
 # clean-sheet probability inside the xpts formula
 # ---------------------------------------------------------------------------
