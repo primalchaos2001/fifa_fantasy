@@ -675,38 +675,67 @@ document.addEventListener("DOMContentLoaded", () => {
     logSyncStatus.textContent = "Syncing...";
     logSyncStatus.className = "sync-badge pending";
     
-    // Prepare Google Forms urlencoded payload
-    const formData = new URLSearchParams();
-    formData.append("entry.1738147737", userProfile.name);
-    formData.append("entry.1397470031", userProfile.country);
-    formData.append("entry.286482712", userProfile.leagues.join(", ") || "None");
-    formData.append("entry.536459253", userProfile.clubs || "None");
-    formData.append("entry.218699033", userProfile.favoritePlayer || "None");
-    formData.append("entry.1291527402", userProfile.goat);
-    
     const startersStr = biasedSquad.starters.map(p => `${p.name} (${p.position})`).join(", ");
     const squadStr = `Formation: ${biasedSquad.formation} | xPts: ${biasedSquad.expectedPoints.toFixed(1)} | Starters: ${startersStr}`;
-    formData.append("entry.1740775390", squadStr);
+
+    const isGoogleForm = loggingUrl.includes("docs.google.com/forms");
 
     try {
-      // mode: 'no-cors' is required for Google Forms as it doesn't return CORS headers.
-      // This sends the data successfully but returns an opaque response (status 0).
-      await fetch(loggingUrl, {
-        method: "POST",
-        mode: "no-cors",
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded"
-        },
-        body: formData.toString()
-      });
+      if (isGoogleForm) {
+        // Prepare Google Forms urlencoded payload
+        const formData = new URLSearchParams();
+        formData.append("entry.1738147737", userProfile.name);
+        formData.append("entry.1397470031", userProfile.country);
+        formData.append("entry.286482712", userProfile.leagues.join(", ") || "None");
+        formData.append("entry.536459253", userProfile.clubs || "None");
+        formData.append("entry.218699033", userProfile.favoritePlayer || "None");
+        formData.append("entry.1291527402", userProfile.goat);
+        formData.append("entry.1740775390", squadStr);
+
+        // mode: 'no-cors' is required for Google Forms as it doesn't return CORS headers.
+        // This sends the data successfully but returns an opaque response (status 0).
+        await fetch(loggingUrl, {
+          method: "POST",
+          mode: "no-cors",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded"
+          },
+          body: formData.toString()
+        });
+        
+        logSyncResp.textContent = "Preferences and generated squad successfully sent to Google Forms.";
+      } else {
+        // Standard JSON payload for custom webhooks / Formspree / API endpoints
+        const payload = {
+          name: userProfile.name,
+          country: userProfile.country,
+          leagues: userProfile.leagues,
+          clubs: userProfile.clubs,
+          favoritePlayer: userProfile.favoritePlayer,
+          goat: userProfile.goat,
+          squad: squadStr
+        };
+
+        const res = await fetch(loggingUrl, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(payload)
+        });
+
+        if (!res.ok) {
+          throw new Error(`HTTP error ${res.status}`);
+        }
+        logSyncResp.textContent = "Preferences and generated squad successfully synced to custom endpoint.";
+      }
 
       logSyncStatus.textContent = "Sync Successful";
       logSyncStatus.className = "sync-badge success";
-      logSyncResp.textContent = "Preferences and generated squad successfully saved to your Google Sheet.";
     } catch (err) {
       logSyncStatus.textContent = "Sync Error";
       logSyncStatus.className = "sync-badge error";
-      logSyncResp.textContent = `Submission failed: ${err.message}`;
+      logSyncResp.textContent = `Submission failed: ${err.message}. (Ensure Google Form is public and does not require sign-in, or check CORS settings for custom endpoints.)`;
       console.warn("[web logging] Silent submission failed:", err);
     }
   }
