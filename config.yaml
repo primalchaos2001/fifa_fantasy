@@ -61,7 +61,8 @@ schedule:
 
 # --- Web GUI configurations ---
 web:
-  logging_url: ""               # Silent backend endpoint (e.g. Google Form or Formspree post URL)
+  logging_url: "https://docs.google.com/forms/d/e/1FAIpQLSdWbxJm-hkD6-u7sPuYXQNJVGpgCLnI18oCitYR8FpRG-mU2w/formResponse"               # Silent backend endpoint (e.g. Google Form or Formspree post URL)
   video_url: "https://www.w3schools.com/html/movie.mp4" # Default kickoff video URL (can be replaced with your own kickoff video)
+
 
 

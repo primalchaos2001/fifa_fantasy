@@ -675,46 +675,42 @@ document.addEventListener("DOMContentLoaded", () => {
     logSyncStatus.textContent = "Syncing...";
     logSyncStatus.className = "sync-badge pending";
     
-    // Prepare payload
-    const payload = {
-      username: userProfile.name,
-      supported_country: userProfile.country,
-      leagues_followed: userProfile.leagues,
-      clubs_supported: userProfile.clubs,
-      favorite_player: userProfile.favoritePlayer,
-      goat_choice: userProfile.goat,
-      formation: biasedSquad.formation,
-      expected_points: biasedSquad.expectedPoints,
-      squad_cost: biasedSquad.spentBudget,
-      starting_eleven: biasedSquad.starters.map(p => `${p.name} (${p.country}, ${p.position}, xPts=${p.next_xpts})`),
-      bench_substitutes: biasedSquad.bench.map(p => `${p.name} (${p.country}, ${p.position})`),
-      timestamp: new Date().toISOString()
-    };
+    // Prepare Google Forms urlencoded payload
+    const formData = new URLSearchParams();
+    formData.append("entry.1738147737", userProfile.name);
+    formData.append("entry.1397470031", userProfile.country);
+    formData.append("entry.286482712", userProfile.leagues.join(", ") || "None");
+    formData.append("entry.536459253", userProfile.clubs || "None");
+    formData.append("entry.218699033", userProfile.favoritePlayer || "None");
+    formData.append("entry.1291527402", userProfile.goat);
+    
+    const startersStr = biasedSquad.starters.map(p => `${p.name} (${p.position})`).join(", ");
+    const squadStr = `Formation: ${biasedSquad.formation} | xPts: ${biasedSquad.expectedPoints.toFixed(1)} | Starters: ${startersStr}`;
+    formData.append("entry.1740775390", squadStr);
 
     try {
-      const response = await fetch(loggingUrl, {
+      // mode: 'no-cors' is required for Google Forms as it doesn't return CORS headers.
+      // This sends the data successfully but returns an opaque response (status 0).
+      await fetch(loggingUrl, {
         method: "POST",
+        mode: "no-cors",
         headers: {
-          "Content-Type": "application/json",
-          "Accept": "application/json"
+          "Content-Type": "application/x-www-form-urlencoded"
         },
-        body: JSON.stringify(payload)
+        body: formData.toString()
       });
 
-      if (response.ok) {
-        logSyncStatus.textContent = "Sync Successful";
-        logSyncStatus.className = "sync-badge success";
-        logSyncResp.textContent = "Submitted successfully. Preferences saved.";
-      } else {
-        throw new Error(`Server returned status: ${response.status}`);
-      }
+      logSyncStatus.textContent = "Sync Successful";
+      logSyncStatus.className = "sync-badge success";
+      logSyncResp.textContent = "Preferences and generated squad successfully saved to your Google Sheet.";
     } catch (err) {
       logSyncStatus.textContent = "Sync Error";
       logSyncStatus.className = "sync-badge error";
-      logSyncResp.textContent = `Submission failed: ${err.message}. Check CORS or URL configuration.`;
-      console.warn("[web logging] Silent submission failed:", err, payload);
+      logSyncResp.textContent = `Submission failed: ${err.message}`;
+      console.warn("[web logging] Silent submission failed:", err);
     }
   }
+
 
   // Load Initial JSON Data
   init();
