@@ -12,6 +12,8 @@ data/snapshots/
 data/reports/
 data/state.json
 data/events.log
+# local web data (the committed docs/data.json is CI-owned)
+docs/data.local.json
 
 # Keep committed: data/fixtures/ (offline test data), config.yaml, priors.yaml
 !data/fixtures/

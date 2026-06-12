@@ -8,6 +8,7 @@
   py -m wc_fantasy.main simulate    # advancement probability table (needs advance.py)
   py -m wc_fantasy.main set-squad --ids 1,2,3,...   # store your 15 (one-time)
   py -m wc_fantasy.main schedule    # register a daily Windows task (automation)
+  py -m wc_fantasy.main serve       # serve the docs/ web GUI over HTTP + open browser
 """
 from __future__ import annotations
 
@@ -18,6 +19,7 @@ from pathlib import Path
 
 from . import optimize, report
 from . import xpts as xptsmod
+from . import constants as C
 from .sources import (DATA_DIR, load_config, load_game_data, team_xg_lookup, GameData,
                       build_news_queries, gather_news)
 from .extract import extract_events
@@ -54,7 +56,8 @@ def _load_priors_yaml() -> dict | None:
 
 # --------------------------------------------------------------------------- context
 class Context:
-    def __init__(self, offline: bool = False, with_news: bool = False, n_sims: int = 4000):
+    def __init__(self, offline: bool = False, with_news: bool = False, n_sims: int = 4000,
+                 sim_seed: int | None = C.SIM_SEED):
         self.cfg = load_config()
         self.gd: GameData = load_game_data(self.cfg, offline=offline)
         self.priors = xptsmod.build_priors(self.gd.players, _load_priors_yaml())
@@ -80,11 +83,12 @@ class Context:
                     states[pid].p_start, states[pid].status = 0.0, ps.status
         self.states = states
 
+        self.sim_seed = sim_seed
         home_adv = self.cfg.get("strength", {}).get("home_advantage_goals", 0.0)
         self.xg = team_xg_lookup(self.gd, home_adv_goals=home_adv)
         try:
             from . import advance
-            self.p_alive = advance.simulate(self.gd, n_sims=n_sims)
+            self.p_alive = advance.simulate(self.gd, n_sims=n_sims, seed=sim_seed)
         except Exception:
             self.p_alive = None  # horizon_values falls back to PRIOR_SURVIVAL
         self.horizon = xptsmod.horizon_values(
@@ -184,7 +188,7 @@ def cmd_simulate(ctx: Context) -> str:
     except ImportError:
         return (report.header(ctx.gd) +
                 "\n\n_simulate: advance.py (Monte Carlo) not built yet — Phase 2._")
-    table = advance.advancement_table(ctx.gd)
+    table = advance.advancement_table(ctx.gd, seed=ctx.sim_seed)
     return report.header(ctx.gd) + "\n\n" + advance.render_table(table, ctx.gd)
 
 
@@ -252,7 +256,8 @@ def cmd_update(ctx: Context) -> str:
                 except Exception as exc:
                     print(f"[web] WARNING: failed to download kickoff video: {exc}.")
         
-        web_json_path = report.save_web_json(ctx.gd, ctx.horizon, ctx.next_xpts, ctx.states, ctx.cfg)
+        web_json_path = report.save_web_json(ctx.gd, ctx.horizon, ctx.next_xpts, ctx.states,
+                                             ctx.cfg, seed=ctx.sim_seed)
         print(f"[web saved] {web_json_path}")
     except Exception as exc:
         print(f"[web WARNING] failed to generate web json or directory: {exc}")
@@ -298,16 +303,60 @@ def cmd_schedule(ctx: Context) -> str:
             "deadline is read live from rounds.json._")
 
 
+def cmd_serve(port: int = 8000, open_browser: bool = True) -> int:
+    """Serve the docs/ web GUI over HTTP and (optionally) open the browser.
+
+    The GUI fetch()es data.json, which browsers block under the file:// protocol — so it
+    MUST be served over HTTP. This does not touch live data; run `update` to refresh data.json.
+    """
+    import functools
+    import http.server
+    import socketserver
+    import webbrowser
+
+    docs = DATA_DIR.parent / "docs"
+    if not (docs / "data.json").exists():
+        print("⚠ docs/data.json not found — run `py -m wc_fantasy.main update` first to compile it.")
+
+    handler = functools.partial(http.server.SimpleHTTPRequestHandler, directory=str(docs))
+    socketserver.TCPServer.allow_reuse_address = True
+    try:
+        httpd = socketserver.TCPServer(("", port), handler)
+    except OSError as exc:
+        print(f"Could not bind port {port}: {exc}\nTry another port: "
+              f"py -m wc_fantasy.main serve --port {port + 1}", file=sys.stderr)
+        return 2
+
+    url = f"http://localhost:{port}"
+    print(f"Serving {docs} at {url}  (press Ctrl+C to stop)")
+    if open_browser:
+        try:
+            webbrowser.open(url)
+        except Exception:
+            pass
+    with httpd:
+        try:
+            httpd.serve_forever()
+        except KeyboardInterrupt:
+            print("\nstopped.")
+    return 0
+
+
 # --------------------------------------------------------------------------- argparse
 def build_parser() -> argparse.ArgumentParser:
     ap = argparse.ArgumentParser(prog="wc_fantasy", description="WC Fantasy 2026 recommender")
     ap.add_argument("--offline", action="store_true", help="use cached snapshots/fixtures only")
+    ap.add_argument("--reseed", action="store_true",
+                    help="use fresh random Monte-Carlo draws (default is a fixed seed for reproducible data)")
     sub = ap.add_subparsers(dest="command", required=True)
     for name in ("update", "pick", "recommend", "transfer", "status", "simulate", "schedule"):
         sub.add_parser(name)
     sq = sub.add_parser("set-squad")
     sq.add_argument("--ids", help="comma-separated player ids")
     sq.add_argument("--file", help="json file with a list of player ids")
+    srv = sub.add_parser("serve")
+    srv.add_argument("--port", type=int, default=8000, help="HTTP port (default 8000)")
+    srv.add_argument("--no-browser", action="store_true", help="don't auto-open the browser")
     return ap
 
 
@@ -326,11 +375,15 @@ def main(argv: list[str] | None = None) -> int:
         print(cmd_set_squad(args.ids, args.file))
         return 0
 
+    if args.command == "serve":
+        return cmd_serve(port=args.port, open_browser=not args.no_browser)
+
+    seed = None if args.reseed else C.SIM_SEED
     try:
         if args.command == "update":
-            ctx = Context(offline=args.offline, with_news=True, n_sims=10000)
+            ctx = Context(offline=args.offline, with_news=True, n_sims=10000, sim_seed=seed)
         else:
-            ctx = Context(offline=args.offline)
+            ctx = Context(offline=args.offline, sim_seed=seed)
     except FetchError as exc:
         print(f"FETCH ERROR: {exc}\nTry --offline to use cached data.", file=sys.stderr)
         return 2

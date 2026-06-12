@@ -105,12 +105,11 @@ def save_report(text: str, name: str) -> Path:
 
 
 def save_web_json(gd: GameData, horizon: dict[int, float], next_xpts: dict[int, float],
-                  states: dict, config: dict) -> Path:
+                  states: dict, config: dict, seed: int | None = None) -> Path:
     import json
-    from .models import PlayerState
     try:
         from . import advance
-        adv_table = advance.advancement_table(gd, n_sims=4000)
+        adv_table = advance.advancement_table(gd, n_sims=4000, seed=seed)
     except Exception:
         adv_table = []
 
@@ -148,7 +147,13 @@ def save_web_json(gd: GameData, horizon: dict[int, float], next_xpts: dict[int, 
         "advancement": adv_table
     }
 
-    path = docs_dir / "data.json"
+    # CI (GitHub Actions) writes the committed docs/data.json that the deployed site serves.
+    # Local runs write a gitignored docs/data.local.json instead, so they never dirty the
+    # tracked file (which would block `git pull`). The GUI fetches data.local.json first,
+    # then falls back to data.json. Set WCF_DEPLOY=1 to force writing the committed file.
+    import os
+    deploy = os.environ.get("GITHUB_ACTIONS") or os.environ.get("WCF_DEPLOY")
+    path = docs_dir / ("data.json" if deploy else "data.local.json")
     with open(path, "w", encoding="utf-8") as fh:
         json.dump(data, fh, indent=2, ensure_ascii=False)
     return path

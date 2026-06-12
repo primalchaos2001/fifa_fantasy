@@ -62,7 +62,10 @@ document.addEventListener("DOMContentLoaded", () => {
   // ==========================================================================
   async function init() {
     try {
-      const response = await fetch("data.json");
+      // Prefer a local-only data.local.json (written by local `update` runs, gitignored)
+      // and fall back to the committed data.json (written & deployed by CI).
+      let response = await fetch("data.local.json");
+      if (!response.ok) response = await fetch("data.json");
       if (!response.ok) throw new Error("Failed to load data.json");
       gameData = await response.json();
       
@@ -95,7 +98,15 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     } catch (error) {
       console.error("Initialization error:", error);
-      alert("Error initializing application. Make sure to run 'py -m wc_fantasy.main update' to compile data.json.");
+      const onFile = location.protocol === "file:";
+      alert(
+        onFile
+          ? "This page must be served over HTTP, not opened from the file system.\n\n" +
+            "Run:  py -m wc_fantasy.main serve\n\n" +
+            "then open http://localhost:8000  (data.json can't be fetched from a file:// URL)."
+          : "Couldn't load data.json. If it's missing, run 'py -m wc_fantasy.main update' to compile it; " +
+            "otherwise check the browser console for the underlying error."
+      );
     }
   }
 

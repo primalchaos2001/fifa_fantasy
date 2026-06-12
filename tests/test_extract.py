@@ -18,8 +18,11 @@ def headlines():
 
 @pytest.fixture(scope="module")
 def events(headlines, gd, config):
-    # config.yaml has extract.llm_extract: false -> deterministic keyword path, offline
-    return extract.extract_events(headlines, gd.players, config)
+    # config.yaml has extract.llm_extract: false -> deterministic keyword path, offline.
+    # Disable the 48h age-drop here: it uses datetime.now(), and the fixture's published
+    # dates are fixed, so these *classification* tests would otherwise rot as real days pass.
+    cfg = {**config, "news": {**config.get("news", {}), "drop_older_than_hours": 24 * 365 * 100}}
+    return extract.extract_events(headlines, gd.players, cfg)
 
 
 def events_for(events, name_fragment: str):

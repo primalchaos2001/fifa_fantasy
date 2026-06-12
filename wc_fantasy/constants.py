@@ -127,6 +127,11 @@ NUM_GROUPS = 12
 # Horizon discount applied per stage beyond the next one (news uncertainty).
 HORIZON_STAGE_DISCOUNT = 0.8
 
+# Fixed seed for the Monte-Carlo sim so horizon values are reproducible run-to-run
+# (10k sims is already accurate; the run-to-run jitter was just sampling noise that made
+# data.json churn on every run). The CLI `--reseed` flag overrides this with fresh draws.
+SIM_SEED = 2026
+
 # Fallback R32 bracket mapping. The live rounds.json fills knockout fixtures in as
 # teams qualify, which advance.py prefers; this is only used before that happens.
 # Encode the official 2026 bracket here when verified.  # VERIFY / TODO
