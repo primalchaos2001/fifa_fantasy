@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tactical Optimizer Methodology & Mathematics</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    .methodology-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--accent-green);
+      text-decoration: none;
+      font-family: var(--font-logo);
+      font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: 30px;
+      transition: transform var(--transition-speed);
+    }
+    .back-btn:hover {
+      transform: translateX(-4px);
+    }
+    .header-section {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .header-section h1 {
+      font-family: var(--font-logo);
+      font-size: 2.8rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+      background: linear-gradient(135deg, #ffffff 30%, #a3e635 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .header-section h2 {
+      font-family: var(--font-logo);
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--accent-green);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+    .methodology-card {
+      padding: 40px;
+      margin-bottom: 30px;
+    }
+    .methodology-card h2 {
+      font-family: var(--font-logo);
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 10px;
+      color: var(--text-primary);
+    }
+    .methodology-card h3 {
+      font-family: var(--font-logo);
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-top: 25px;
+      margin-bottom: 10px;
+      color: var(--accent-green);
+    }
+    .methodology-card p {
+      color: var(--text-secondary);
+      line-height: 1.7;
+      font-size: 1.05rem;
+      margin-bottom: 15px;
+    }
+    .methodology-card ul {
+      margin-left: 25px;
+      margin-bottom: 20px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+    .methodology-card li {
+      margin-bottom: 8px;
+    }
+    .math-block {
+      background: rgba(0, 0, 0, 0.4);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 20px;
+      font-family: monospace;
+      font-size: 0.95rem;
+      color: #a3e635;
+      margin: 20px 0;
+      overflow-x: auto;
+      line-height: 1.5;
+    }
+    .math-inline {
+      font-family: monospace;
+      color: #a3e635;
+      background: rgba(0, 0, 0, 0.3);
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+    .rules-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .rule-box {
+      background: rgba(10, 14, 23, 0.5);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .rule-box h4 {
+      font-family: var(--font-logo);
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+    }
+    .rule-box p {
+      font-size: 0.95rem;
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Video Background Layer -->
+  <div class="video-container">
+    <video autoplay muted loop playsinline id="bg-video">
+      <source src="assets/kickoff.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+  </div>
+
+  <main class="methodology-container">
+    <a href="index.html" class="back-btn">← Return to Dashboard</a>
+
+    <header class="header-section">
+      <h2>Tactical core details</h2>
+      <h1>METHODOLOGY & MATHEMATICS</h1>
+    </header>
+
+    <!-- Section 1: Overview -->
+    <section class="glass-card methodology-card">
+      <h2>1. Tactical Overview & Engineering Philosophy</h2>
+      <p>
+        The FIFA World Cup 2026 Tactical Fantasy Optimizer is a state-of-the-art recommendation engine designed to build and maintain an optimal fantasy squad. Instead of focusing on hyper-complex, overfit statistical predictions, our philosophy is anchored on a core principle:
+      </p>
+      <p style="font-weight: 600; color: var(--text-primary); border-left: 3px solid var(--accent-green); padding-left: 15px; margin: 20px 0;">
+        Information breadth and news latency beat model complexity. 
+      </p>
+      <p>
+        In short tournament formats, a player's actual starting likelihood—driven by injuries, coach press conferences, and suspension flags—carries far higher expected value (EV) than minor statistical variances. The engine is engineered to process massive volumes of real-time open web sources, extract structured availability intelligence, simulate the tournament, and run linear optimization algorithms to deliver clean, actionable recommendations.
+      </p>
+    </section>
+
+    <!-- Section 2: Tournament Requirements -->
+    <section class="glass-card methodology-card">
+      <h2>2. Official Tournament Rules & Constraints</h2>
+      <p>
+        The engine models the official rules of the Aramco FIFA World Cup Fantasy 2026. Every recommendation respects the following strict constraints:
+      </p>
+      
+      <div class="rules-grid">
+        <div class="rule-box">
+          <h4>Squad Composition</h4>
+          <p>Exactly 15 players: 2 Goalkeepers, 5 Defenders, 5 Midfielders, and 3 Forwards.</p>
+        </div>
+        <div class="rule-box">
+          <h4>Budget Constraints</h4>
+          <p>Initial budget of $100.0m. This increases automatically to $105.0m once Round 3 locks and the Round of 32 transfers open.</p>
+        </div>
+        <div class="rule-box">
+          <h4>Country Cap</h4>
+          <p>Maximum of 3 players per country during the group stage and Round of 32. This cap scales up in later rounds as countries are eliminated.</p>
+        </div>
+        <div class="rule-box">
+          <h4>Transfer Penalties</h4>
+          <p>2 free transfers are granted per matchday. Additional transfers can be made but incur a penalty of -3 points per transfer.</p>
+        </div>
+        <div class="rule-box">
+          <h4>Tactical Formations</h4>
+          <p>The starting XI must form a valid formation. The engine supports all official formations (e.g., 3-5-2, 4-4-2, 4-3-3, 3-4-3, 5-3-2, etc.).</p>
+        </div>
+        <div class="rule-box">
+          <h4>Differential Scouting Bonus</h4>
+          <p>Players with low ownership (&lt; 5%) that score 4+ points in a match receive bonus points. The engine incorporates this differential boost into player evaluations.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Database & Data Pipeline -->
+    <section class="glass-card methodology-card">
+      <h2>3. Database & Data Architecture</h2>
+      <p>
+        The database of the Tactical Engine is built on a light, modular filesystem database designed for reliability, offline execution, and complete auditability:
+      </p>
+      <ul>
+        <li><strong>Automated Data Pipelines:</strong> The engine queries the official FIFA API endpoints periodically to pull down players' prices, official positions, injury status, match fixture details, and deadlines.</li>
+        <li><strong>Headlines Scraper:</strong> Google News RSS searches and major sports RSS feeds (such as BBC Sport) are scraped to compile articles and snippets about active squads.</li>
+        <li><strong>Structured Event Database:</strong> Scraped articles are parsed (using keyword classifiers or LLMs) into structured events detailing player doubts, confirmed lineups, or suspensions.</li>
+        <li><strong>State Storage (`data/state.json`):</strong> These events are blended with the official API data using a trust-weighted decay model to maintain the single source of truth for player states (likelihood to start, fitness index).</li>
+        <li><strong>Audit Logging (`data/events.log`):</strong> Every single update to a player's starting probability is logged with timestamps, descriptions, and article URLs. No recommendation is made without receipts showing *why* it was suggested.</li>
+      </ul>
+    </section>
+
+    <!-- Section 4: Mathematical Framework -->
+    <section class="glass-card methodology-card">
+      <h2>4. The Mathematical Prediction Engine</h2>
+      <p>
+        Expected points (xPts) and tournament survival calculations are solved using a combination of probability distributions, ratings-based goal expectations, and linear programming.
+      </p>
+
+      <h3>A. Team Goal Expectancy (&lambda;)</h3>
+      <p>
+        Fixture strength is calculated using World Football Elo ratings. The Elo difference between teams is converted into a goal supremacy metric:
+      </p>
+      <div class="math-block">
+        Diff = Elo_home - Elo_away + (Home_Advantage_Goals / 0.0035)
+        Supremacy = Diff * 0.0035
+
+        &lambda;_home = max(MIN_LAMBDA, (Average_Total_Goals / 2) + (Supremacy / 2))
+        &lambda;_away = max(MIN_LAMBDA, (Average_Total_Goals / 2) - (Supremacy / 2))
+      </div>
+      <p>
+        Where <span class="math-inline">Average_Total_Goals</span> is set to a baseline of <span class="math-inline">2.60</span> goals per match, and <span class="math-inline">MIN_LAMBDA = 0.20</span> goals.
+      </p>
+
+      <h3>B. Scoreline Joint Probability (Dixon-Coles Adjustment)</h3>
+      <p>
+        Standard Poisson models assume that the goals scored by each team are independent. However, football matches show a higher frequency of low-scoring draws ($0-0$ and $1-1$) than independent Poisson calculations suggest. To fix this, we apply the **Dixon-Coles adjustment**:
+      </p>
+      <p>
+        The joint probability of a scoreline $(h, a)$ is given by:
+      </p>
+      <div class="math-block">
+        P(H = h, A = a) = &tau;(h, a) * Poisson(h; &lambda;_home) * Poisson(a; &lambda;_away)
+      </div>
+      <p>
+        Where the correlation adjustment factor &tau;(h, a) is defined using a correlation parameter <span class="math-inline">&rho; = -0.13</span>:
+      </p>
+      <div class="math-block">
+        &tau;(0, 0) = 1.0 - &lambda;_home * &lambda;_away * &rho;
+        &tau;(0, 1) = 1.0 + &lambda;_home * &rho;
+        &tau;(1, 0) = 1.0 + &lambda;_away * &rho;
+        &tau;(1, 1) = 1.0 - &rho;
+        &tau;(h, a) = 1.0  (for all other scorelines)
+      </div>
+      <p>
+        To prevent negative probabilities, $\tau$ is clipped at a minimum of $0.0$. This ensures that win, draw, and loss probabilities ($P_{win}, P_{draw}, P_{loss}$) are mathematically sound and align with real-world betting distributions.
+      </p>
+
+      <h3>C. Clean Sheet Marginals</h3>
+      <p>
+        An important mathematical property of the Dixon-Coles model is that it **preserves the marginal Poisson distributions**. The probability of a team conceding 0 goals remains:
+      </p>
+      <div class="math-block">
+        P(Conceded = 0) = e^(-&lambda;_against)
+      </div>
+      <p>
+        This keeps defensive clean sheet and conceded penalty calculations stable for expected fantasy points.
+      </p>
+
+      <h3>D. Tournament Survival (Monte Carlo Simulations)</h3>
+      <p>
+        Since fantasy managers need to avoid choosing players from countries that might be eliminated early, the engine runs a **10,000-trial Monte Carlo simulation** of the remaining tournament. 
+      </p>
+      <p>
+        For each trial, the engine simulates group stage matches using Poisson goal draws, determines qualification standings, applies FIFA tiebreaker procedures, builds the Round of 32 bracket, and simulates knockout matches using Elo win probabilities. This yields:
+      </p>
+      <div class="math-block">
+        P(Team Alive at Stage S)  (for all S &isin; { R32, R16, QF, SF, F })
+      </div>
+
+      <h3>E. Player Expected Points (xPts)</h3>
+      <p>
+        For each unplayed fixture, a player's expected points is computed by blending their player priors (goal share, assist share, set-piece roles, and baseline stats per 90) with the team goal expectancies:
+      </p>
+      <div class="math-block">
+        xPts(match) = P(start) * [ appearance_pts
+                    + goal_share   * &lambda;_for   * goal_pts(pos)
+                    + assist_share * &lambda;_for   * assist_pts
+                    + P(Clean Sheet)             * cs_pts(pos)
+                    + Conceded_Penalty_Term(pos)
+                    + stat_baseline(pos)
+                    + penalty_taker_flag * pen_goals_ev * goal_pts(pos) ] * fitness_mult
+                    + scouting_bonus_ev
+      </div>
+
+      <h3>F. Horizon Value & Mixed-Integer Linear Programming (MILP)</h3>
+      <p>
+        To make transfers, the optimizer does not look only at the next matchday; it maximizes the **Horizon Value (HV)** of the squad across the rest of the tournament:
+      </p>
+      <div class="math-block">
+        HV = &sum; [ Discount^t * xPts_match(t) * P(Team Alive at Stage of Match t) ]
+      </div>
+      <p>
+        The squad selection, captaincy designation, and transfer swaps are solved as a Mixed-Integer Linear Program (MILP) using a branch-and-bound solver to find the mathematically optimal actions:
+      </p>
+      <div class="math-block">
+        Maximize:  &sum; HV(Player_i * Owned_i) - 3 * max(0, Transfers_Made - Free_Transfers)
+        Subject to:
+          - Budget &le; $100.0m (or $105.0m)
+          - Quotas: exactly 2 GK, 5 DEF, 5 MID, 3 FWD
+          - Country Cap: &le; stage limit per country
+          - Valid formation constraints for Starting XI
+      </div>
+    </section>
+  </main>
+</body>
+</html>
