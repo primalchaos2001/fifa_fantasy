@@ -1684,3 +1684,10 @@ body {
   box-shadow: 0 0 15px var(--accent-green-glow);
 }
 
+/* Ensure select options have a dark background and are readable across all browsers */
+select option {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+

@@ -816,7 +816,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const favClubs = pref.clubs ? pref.clubs.toLowerCase().split(",").map(c => c.trim()).filter(c => c) : [];
     
     // 1. Apply Point Biases & Identify Forced Inclusions
-    let biasedPlayers = players.map(p => {
+    players.forEach(p => {
       let customXpts = p.next_xpts;
       let biasNotes = [];
       let isForced = false;
@@ -843,16 +843,13 @@ document.addEventListener("DOMContentLoaded", () => {
         biasNotes.push("Forced Selection Favorite Player");
       }
       
-      return {
-        ...p,
-        custom_xpts: customXpts,
-        bias_notes: biasNotes,
-        is_forced: isForced
-      };
+      p.custom_xpts = customXpts;
+      p.bias_notes = biasNotes;
+      p.is_forced = isForced;
     });
 
     // Filter eligible players (only 'playing' status)
-    eligiblePlayers = biasedPlayers.filter(p => p.status === "playing");
+    eligiblePlayers = players.filter(p => p.status === "playing");
 
     // 2. Select 15-player Squad under budget & country caps (Greedy Selection)
     // Budget: $100m. Country cap: 3 players max.
