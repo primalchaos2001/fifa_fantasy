@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-13T06:27:25.184547+00:00",
+  "last_updated": "2026-06-13T06:53:58.437635+00:00",
   "next_round_id": 2,
   "current_stage": "GROUP",
   "next_deadline": "2026-06-18T17:00:00+01:00",
@@ -8652,9 +8652,9 @@
       "ownership": 0.6,
       "status": "playing",
       "match_status": "start",
-      "next_xpts": 0.036,
-      "horizon_value": 0.114,
-      "p_start": 0.0
+      "next_xpts": 5.994,
+      "horizon_value": 18.441,
+      "p_start": 1.0
     },
     {
       "id": 742,
@@ -12292,9 +12292,9 @@
       "ownership": 0.1,
       "status": "playing",
       "match_status": "sub",
-      "next_xpts": 0.036,
-      "horizon_value": 0.084,
-      "p_start": 0.0
+      "next_xpts": 0.665,
+      "horizon_value": 1.58,
+      "p_start": 0.15
     },
     {
       "id": 1060,
@@ -12334,9 +12334,9 @@
       "ownership": 0.0,
       "status": "playing",
       "match_status": "start",
-      "next_xpts": 0.036,
-      "horizon_value": 0.084,
-      "p_start": 0.0
+      "next_xpts": 5.588,
+      "horizon_value": 13.327,
+      "p_start": 1.0
     },
     {
       "id": 1063,
@@ -15792,9 +15792,9 @@
       "ownership": 3.0,
       "status": "playing",
       "match_status": null,
-      "next_xpts": 5.425,
-      "horizon_value": 25.306,
-      "p_start": 0.7
+      "next_xpts": 0.036,
+      "horizon_value": 0.166,
+      "p_start": 0.0
     },
     {
       "id": 1374,
