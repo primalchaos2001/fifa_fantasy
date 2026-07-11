@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-10T09:40:16.462216+00:00",
+  "last_updated": "2026-07-11T08:00:29.978494+00:00",
   "next_round_id": 7,
   "current_stage": "SF",
   "next_deadline": "2026-07-14T20:00:00+01:00",
@@ -739,7 +739,7 @@
       "squad_id": 2,
       "position": "GK",
       "price": 5.0,
-      "ownership": 36.4,
+      "ownership": 36.5,
       "status": "playing",
       "match_status": null,
       "next_xpts": 2.919,
@@ -893,7 +893,7 @@
       "squad_id": 2,
       "position": "MID",
       "price": 6.6,
-      "ownership": 9.4,
+      "ownership": 9.5,
       "status": "playing",
       "match_status": null,
       "next_xpts": 3.814,
@@ -1299,7 +1299,7 @@
       "squad_id": 4,
       "position": "DEF",
       "price": 4.6,
-      "ownership": 1.1,
+      "ownership": 1.0,
       "status": "eliminated",
       "match_status": null,
       "next_xpts": 0.0,
@@ -1665,10 +1665,10 @@
       "price": 4.7,
       "ownership": 1.7,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 3.177,
-      "horizon_value": 4.087,
-      "p_start": 0.7
+      "match_status": "start",
+      "next_xpts": 0.0,
+      "horizon_value": 1.394,
+      "p_start": 1.0
     },
     {
       "id": 115,
@@ -1679,10 +1679,10 @@
       "price": 4.7,
       "ownership": 0.3,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 3.177,
-      "horizon_value": 4.087,
-      "p_start": 0.7
+      "match_status": "start",
+      "next_xpts": 0.0,
+      "horizon_value": 1.394,
+      "p_start": 1.0
     },
     {
       "id": 116,
@@ -1693,10 +1693,10 @@
       "price": 4.5,
       "ownership": 0.2,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 3.058,
-      "horizon_value": 3.934,
-      "p_start": 0.7
+      "match_status": "sub",
+      "next_xpts": 0.0,
+      "horizon_value": 0.175,
+      "p_start": 0.15
     },
     {
       "id": 117,
@@ -1707,10 +1707,10 @@
       "price": 4.8,
       "ownership": 0.6,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 3.238,
-      "horizon_value": 4.164,
-      "p_start": 0.7
+      "match_status": "sub",
+      "next_xpts": 0.0,
+      "horizon_value": 0.183,
+      "p_start": 0.15
     },
     {
       "id": 118,
@@ -1721,10 +1721,10 @@
       "price": 4.3,
       "ownership": 0.1,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 2.94,
-      "horizon_value": 3.783,
-      "p_start": 0.7
+      "match_status": "not_in_squad",
+      "next_xpts": 0.0,
+      "horizon_value": 0.009,
+      "p_start": 0.0
     },
     {
       "id": 119,
@@ -1733,12 +1733,12 @@
       "squad_id": 5,
       "position": "MID",
       "price": 5.0,
-      "ownership": 0.9,
+      "ownership": 1.0,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 3.512,
-      "horizon_value": 4.436,
-      "p_start": 0.7
+      "match_status": "sub",
+      "next_xpts": 0.0,
+      "horizon_value": 0.183,
+      "p_start": 0.15
     },
     {
       "id": 120,
@@ -1749,10 +1749,10 @@
       "price": 4.2,
       "ownership": 0.1,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 2.881,
-      "horizon_value": 3.708,
-      "p_start": 0.7
+      "match_status": "sub",
+      "next_xpts": 0.0,
+      "horizon_value": 0.167,
+      "p_start": 0.15
     },
     {
       "id": 121,
@@ -1763,10 +1763,10 @@
       "price": 3.9,
       "ownership": 0.9,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 2.708,
-      "horizon_value": 3.487,
-      "p_start": 0.7
+      "match_status": "start",
+      "next_xpts": 0.0,
+      "horizon_value": 1.193,
+      "p_start": 1.0
     },
     {
       "id": 122,
@@ -1777,10 +1777,10 @@
       "price": 3.9,
       "ownership": 0.1,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 2.708,
-      "horizon_value": 3.487,
-      "p_start": 0.7
+      "match_status": "sub",
+      "next_xpts": 0.0,
+      "horizon_value": 0.159,
+      "p_start": 0.15
     },
     {
       "id": 123,
@@ -1791,10 +1791,10 @@
       "price": 3.7,
       "ownership": 0.7,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 2.594,
-      "horizon_value": 3.342,
-      "p_start": 0.7
+      "match_status": "start",
+      "next_xpts": 0.0,
+      "horizon_value": 1.143,
+      "p_start": 1.0
     },
     {
       "id": 124,
@@ -1805,10 +1805,10 @@
       "price": 7.4,
       "ownership": 1.9,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 4.592,
-      "horizon_value": 5.838,
-      "p_start": 0.7
+      "match_status": "sub",
+      "next_xpts": 0.0,
+      "horizon_value": 0.233,
+      "p_start": 0.15
     },
     {
       "id": 125,
@@ -1817,12 +1817,12 @@
       "squad_id": 5,
       "position": "MID",
       "price": 7.5,
-      "ownership": 5.8,
+      "ownership": 5.7,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 3.498,
-      "horizon_value": 4.414,
-      "p_start": 0.7
+      "match_status": "start",
+      "next_xpts": 0.0,
+      "horizon_value": 1.308,
+      "p_start": 1.0
     },
     {
       "id": 127,
@@ -1833,10 +1833,10 @@
       "price": 5.9,
       "ownership": 0.1,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 3.696,
-      "horizon_value": 4.674,
-      "p_start": 0.7
+      "match_status": "sub",
+      "next_xpts": 0.0,
+      "horizon_value": 0.192,
+      "p_start": 0.15
     },
     {
       "id": 128,
@@ -1847,10 +1847,10 @@
       "price": 5.7,
       "ownership": 0.1,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 3.84,
-      "horizon_value": 4.855,
-      "p_start": 0.7
+      "match_status": "sub",
+      "next_xpts": 0.0,
+      "horizon_value": 0.198,
+      "p_start": 0.15
     },
     {
       "id": 129,
@@ -1861,10 +1861,10 @@
       "price": 5.6,
       "ownership": 2.8,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 3.793,
-      "horizon_value": 4.794,
-      "p_start": 0.7
+      "match_status": "start",
+      "next_xpts": 0.0,
+      "horizon_value": 1.526,
+      "p_start": 1.0
     },
     {
       "id": 132,
@@ -1875,10 +1875,10 @@
       "price": 4.6,
       "ownership": 1.0,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 2.013,
-      "horizon_value": 2.596,
-      "p_start": 0.7
+      "match_status": "sub",
+      "next_xpts": 0.0,
+      "horizon_value": 0.125,
+      "p_start": 0.15
     },
     {
       "id": 135,
@@ -1889,10 +1889,10 @@
       "price": 5.3,
       "ownership": 0.5,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 3.652,
-      "horizon_value": 4.614,
-      "p_start": 0.7
+      "match_status": "start",
+      "next_xpts": 0.0,
+      "horizon_value": 1.471,
+      "p_start": 1.0
     },
     {
       "id": 136,
@@ -1903,10 +1903,10 @@
       "price": 5.9,
       "ownership": 0.2,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 3.936,
-      "horizon_value": 4.977,
-      "p_start": 0.7
+      "match_status": "not_in_squad",
+      "next_xpts": 0.0,
+      "horizon_value": 0.009,
+      "p_start": 0.0
     },
     {
       "id": 137,
@@ -1917,10 +1917,10 @@
       "price": 6.1,
       "ownership": 3.6,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 3.867,
-      "horizon_value": 4.87,
-      "p_start": 0.7
+      "match_status": "not_in_squad",
+      "next_xpts": 0.0,
+      "horizon_value": 0.009,
+      "p_start": 0.0
     },
     {
       "id": 138,
@@ -1931,10 +1931,10 @@
       "price": 7.5,
       "ownership": 4.2,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 4.593,
-      "horizon_value": 5.814,
-      "p_start": 0.7
+      "match_status": "start",
+      "next_xpts": 0.0,
+      "horizon_value": 1.808,
+      "p_start": 1.0
     },
     {
       "id": 139,
@@ -2279,7 +2279,7 @@
       "squad_id": 7,
       "position": "DEF",
       "price": 5.5,
-      "ownership": 12.0,
+      "ownership": 11.9,
       "status": "eliminated",
       "match_status": null,
       "next_xpts": 0.0,
@@ -2377,7 +2377,7 @@
       "squad_id": 7,
       "position": "MID",
       "price": 10.0,
-      "ownership": 14.8,
+      "ownership": 14.7,
       "status": "eliminated",
       "match_status": null,
       "next_xpts": 0.0,
@@ -2489,7 +2489,7 @@
       "squad_id": 7,
       "position": "GK",
       "price": 5.0,
-      "ownership": 5.2,
+      "ownership": 5.1,
       "status": "eliminated",
       "match_status": null,
       "next_xpts": 0.0,
@@ -3189,7 +3189,7 @@
       "squad_id": 10,
       "position": "DEF",
       "price": 4.6,
-      "ownership": 7.5,
+      "ownership": 7.4,
       "status": "eliminated",
       "match_status": null,
       "next_xpts": 0.0,
@@ -3273,7 +3273,7 @@
       "squad_id": 10,
       "position": "MID",
       "price": 8.1,
-      "ownership": 9.2,
+      "ownership": 9.1,
       "status": "eliminated",
       "match_status": null,
       "next_xpts": 0.0,
@@ -3861,7 +3861,7 @@
       "squad_id": 12,
       "position": "DEF",
       "price": 3.9,
-      "ownership": 0.9,
+      "ownership": 0.8,
       "status": "eliminated",
       "match_status": null,
       "next_xpts": 0.0,
@@ -5740,9 +5740,9 @@
       "ownership": 6.7,
       "status": "playing",
       "match_status": null,
-      "next_xpts": 2.267,
-      "horizon_value": 3.119,
-      "p_start": 0.413
+      "next_xpts": 3.843,
+      "horizon_value": 5.288,
+      "p_start": 0.7
     },
     {
       "id": 462,
@@ -5765,7 +5765,7 @@
       "squad_id": 18,
       "position": "DEF",
       "price": 4.8,
-      "ownership": 5.6,
+      "ownership": 5.7,
       "status": "playing",
       "match_status": null,
       "next_xpts": 3.686,
@@ -5838,9 +5838,9 @@
       "ownership": 2.1,
       "status": "playing",
       "match_status": null,
-      "next_xpts": 3.153,
-      "horizon_value": 4.407,
-      "p_start": 0.511
+      "next_xpts": 4.582,
+      "horizon_value": 6.397,
+      "p_start": 0.7
     },
     {
       "id": 474,
@@ -5989,7 +5989,7 @@
       "squad_id": 18,
       "position": "MID",
       "price": 8.3,
-      "ownership": 42.4,
+      "ownership": 42.5,
       "status": "playing",
       "match_status": null,
       "next_xpts": 4.197,
@@ -6006,8 +6006,8 @@
       "ownership": 2.5,
       "status": "playing",
       "match_status": "sub",
-      "next_xpts": 0.0,
-      "horizon_value": 0.461,
+      "next_xpts": 0.79,
+      "horizon_value": 0.946,
       "p_start": 0.15
     },
     {
@@ -6020,8 +6020,8 @@
       "ownership": 0.3,
       "status": "playing",
       "match_status": "sub",
-      "next_xpts": 0.0,
-      "horizon_value": 0.424,
+      "next_xpts": 0.727,
+      "horizon_value": 0.871,
       "p_start": 0.15
     },
     {
@@ -6031,11 +6031,11 @@
       "squad_id": 19,
       "position": "DEF",
       "price": 5.3,
-      "ownership": 13.9,
+      "ownership": 14.1,
       "status": "playing",
       "match_status": "start",
-      "next_xpts": 0.0,
-      "horizon_value": 2.886,
+      "next_xpts": 4.947,
+      "horizon_value": 5.925,
       "p_start": 1.0
     },
     {
@@ -6048,8 +6048,8 @@
       "ownership": 1.5,
       "status": "playing",
       "match_status": "sub",
-      "next_xpts": 0.0,
-      "horizon_value": 0.45,
+      "next_xpts": 0.772,
+      "horizon_value": 0.924,
       "p_start": 0.15
     },
     {
@@ -6062,8 +6062,8 @@
       "ownership": 1.4,
       "status": "playing",
       "match_status": "sub",
-      "next_xpts": 0.0,
-      "horizon_value": 0.47,
+      "next_xpts": 0.805,
+      "horizon_value": 0.964,
       "p_start": 0.15
     },
     {
@@ -6073,11 +6073,11 @@
       "squad_id": 19,
       "position": "DEF",
       "price": 5.0,
-      "ownership": 7.1,
+      "ownership": 7.2,
       "status": "playing",
       "match_status": "start",
-      "next_xpts": 0.0,
-      "horizon_value": 2.764,
+      "next_xpts": 4.738,
+      "horizon_value": 5.676,
       "p_start": 1.0
     },
     {
@@ -6090,8 +6090,8 @@
       "ownership": 0.4,
       "status": "playing",
       "match_status": "sub",
-      "next_xpts": 0.0,
-      "horizon_value": 0.463,
+      "next_xpts": 0.794,
+      "horizon_value": 0.951,
       "p_start": 0.15
     },
     {
@@ -6104,8 +6104,8 @@
       "ownership": 70.5,
       "status": "playing",
       "match_status": "start",
-      "next_xpts": 0.0,
-      "horizon_value": 4.08,
+      "next_xpts": 6.973,
+      "horizon_value": 8.356,
       "p_start": 1.0
     },
     {
@@ -6115,11 +6115,11 @@
       "squad_id": 19,
       "position": "MID",
       "price": 10.0,
-      "ownership": 45.2,
+      "ownership": 45.3,
       "status": "playing",
       "match_status": "start",
-      "next_xpts": 0.0,
-      "horizon_value": 3.68,
+      "next_xpts": 6.286,
+      "horizon_value": 7.534,
       "p_start": 1.0
     },
     {
@@ -6132,8 +6132,8 @@
       "ownership": 0.4,
       "status": "playing",
       "match_status": "sub",
-      "next_xpts": 0.0,
-      "horizon_value": 0.449,
+      "next_xpts": 0.766,
+      "horizon_value": 0.918,
       "p_start": 0.15
     },
     {
@@ -6143,11 +6143,11 @@
       "squad_id": 19,
       "position": "MID",
       "price": 7.5,
-      "ownership": 4.4,
+      "ownership": 4.5,
       "status": "playing",
       "match_status": "start",
-      "next_xpts": 0.0,
-      "horizon_value": 3.897,
+      "next_xpts": 6.652,
+      "horizon_value": 7.973,
       "p_start": 1.0
     },
     {
@@ -6157,11 +6157,11 @@
       "squad_id": 19,
       "position": "GK",
       "price": 5.0,
-      "ownership": 19.2,
+      "ownership": 19.3,
       "status": "playing",
       "match_status": "start",
-      "next_xpts": 0.0,
-      "horizon_value": 1.762,
+      "next_xpts": 3.027,
+      "horizon_value": 3.624,
       "p_start": 1.0
     },
     {
@@ -6174,8 +6174,8 @@
       "ownership": 0.2,
       "status": "playing",
       "match_status": "sub",
-      "next_xpts": 0.0,
-      "horizon_value": 0.3,
+      "next_xpts": 0.515,
+      "horizon_value": 0.617,
       "p_start": 0.15
     },
     {
@@ -6185,11 +6185,11 @@
       "squad_id": 19,
       "position": "MID",
       "price": 5.1,
-      "ownership": 0.8,
+      "ownership": 0.9,
       "status": "playing",
       "match_status": "sub",
-      "next_xpts": 0.0,
-      "horizon_value": 0.448,
+      "next_xpts": 0.763,
+      "horizon_value": 0.915,
       "p_start": 0.15
     },
     {
@@ -6202,8 +6202,8 @@
       "ownership": 1.0,
       "status": "playing",
       "match_status": "start",
-      "next_xpts": 0.0,
-      "horizon_value": 4.033,
+      "next_xpts": 6.883,
+      "horizon_value": 8.251,
       "p_start": 1.0
     },
     {
@@ -6216,8 +6216,8 @@
       "ownership": 0.2,
       "status": "playing",
       "match_status": "sub",
-      "next_xpts": 0.0,
-      "horizon_value": 0.497,
+      "next_xpts": 0.849,
+      "horizon_value": 1.017,
       "p_start": 0.15
     },
     {
@@ -6227,11 +6227,11 @@
       "squad_id": 19,
       "position": "MID",
       "price": 6.1,
-      "ownership": 0.2,
+      "ownership": 0.3,
       "status": "playing",
       "match_status": "start",
-      "next_xpts": 0.0,
-      "horizon_value": 3.907,
+      "next_xpts": 6.668,
+      "horizon_value": 7.992,
       "p_start": 1.0
     },
     {
@@ -6244,8 +6244,8 @@
       "ownership": 0.0,
       "status": "playing",
       "match_status": "sub",
-      "next_xpts": 0.0,
-      "horizon_value": 0.512,
+      "next_xpts": 0.874,
+      "horizon_value": 1.048,
       "p_start": 0.15
     },
     {
@@ -6258,9 +6258,9 @@
       "ownership": 0.9,
       "status": "playing",
       "match_status": "sub",
-      "next_xpts": 0.0,
-      "horizon_value": 0.517,
-      "p_start": 0.15
+      "next_xpts": 2.09,
+      "horizon_value": 2.506,
+      "p_start": 0.35
     },
     {
       "id": 516,
@@ -6272,8 +6272,8 @@
       "ownership": 3.9,
       "status": "playing",
       "match_status": "sub",
-      "next_xpts": 0.0,
-      "horizon_value": 0.513,
+      "next_xpts": 0.876,
+      "horizon_value": 1.05,
       "p_start": 0.15
     },
     {
@@ -6283,12 +6283,12 @@
       "squad_id": 19,
       "position": "MID",
       "price": 9.5,
-      "ownership": 48.4,
+      "ownership": 48.5,
       "status": "playing",
       "match_status": "start",
-      "next_xpts": 0.0,
-      "horizon_value": 3.359,
-      "p_start": 1.0
+      "next_xpts": 4.188,
+      "horizon_value": 5.02,
+      "p_start": 0.731
     },
     {
       "id": 518,
@@ -6549,7 +6549,7 @@
       "squad_id": 20,
       "position": "MID",
       "price": 7.5,
-      "ownership": 6.9,
+      "ownership": 6.8,
       "status": "eliminated",
       "match_status": null,
       "next_xpts": 0.0,
@@ -8747,7 +8747,7 @@
       "squad_id": 28,
       "position": "FWD",
       "price": 7.0,
-      "ownership": 1.7,
+      "ownership": 1.6,
       "status": "eliminated",
       "match_status": null,
       "next_xpts": 0.0,
@@ -8873,7 +8873,7 @@
       "squad_id": 28,
       "position": "GK",
       "price": 3.9,
-      "ownership": 5.7,
+      "ownership": 5.6,
       "status": "eliminated",
       "match_status": null,
       "next_xpts": 0.0,
@@ -8887,7 +8887,7 @@
       "squad_id": 28,
       "position": "MID",
       "price": 5.0,
-      "ownership": 0.9,
+      "ownership": 0.8,
       "status": "eliminated",
       "match_status": null,
       "next_xpts": 0.0,
@@ -9125,7 +9125,7 @@
       "squad_id": 29,
       "position": "MID",
       "price": 6.8,
-      "ownership": 12.9,
+      "ownership": 12.8,
       "status": "injured",
       "match_status": "sub",
       "next_xpts": 0.0,
@@ -9867,7 +9867,7 @@
       "squad_id": 32,
       "position": "DEF",
       "price": 4.0,
-      "ownership": 2.5,
+      "ownership": 2.6,
       "status": "playing",
       "match_status": null,
       "next_xpts": 2.712,
@@ -9979,7 +9979,7 @@
       "squad_id": 32,
       "position": "GK",
       "price": 4.2,
-      "ownership": 3.3,
+      "ownership": 3.4,
       "status": "playing",
       "match_status": null,
       "next_xpts": 1.929,
@@ -10749,7 +10749,7 @@
       "squad_id": 35,
       "position": "DEF",
       "price": 5.8,
-      "ownership": 23.8,
+      "ownership": 23.6,
       "status": "eliminated",
       "match_status": null,
       "next_xpts": 0.0,
@@ -10777,7 +10777,7 @@
       "squad_id": 35,
       "position": "DEF",
       "price": 5.0,
-      "ownership": 1.5,
+      "ownership": 1.4,
       "status": "eliminated",
       "match_status": null,
       "next_xpts": 0.0,
@@ -10903,7 +10903,7 @@
       "squad_id": 35,
       "position": "MID",
       "price": 5.7,
-      "ownership": 0.2,
+      "ownership": 0.1,
       "status": "eliminated",
       "match_status": null,
       "next_xpts": 0.0,
@@ -10987,7 +10987,7 @@
       "squad_id": 35,
       "position": "MID",
       "price": 6.4,
-      "ownership": 6.3,
+      "ownership": 6.2,
       "status": "eliminated",
       "match_status": null,
       "next_xpts": 0.0,
@@ -11015,7 +11015,7 @@
       "squad_id": 35,
       "position": "MID",
       "price": 8.5,
-      "ownership": 21.0,
+      "ownership": 20.9,
       "status": "eliminated",
       "match_status": null,
       "next_xpts": 0.0,
@@ -11883,7 +11883,7 @@
       "squad_id": 38,
       "position": "GK",
       "price": 3.6,
-      "ownership": 0.8,
+      "ownership": 0.7,
       "status": "eliminated",
       "match_status": null,
       "next_xpts": 0.0,
@@ -12557,10 +12557,10 @@
       "price": 5.9,
       "ownership": 0.1,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 4.63,
-      "horizon_value": 7.059,
-      "p_start": 0.7
+      "match_status": "sub",
+      "next_xpts": 0.823,
+      "horizon_value": 0.981,
+      "p_start": 0.15
     },
     {
       "id": 1082,
@@ -12571,10 +12571,10 @@
       "price": 6.0,
       "ownership": 8.5,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 3.793,
-      "horizon_value": 5.811,
-      "p_start": 0.7
+      "match_status": "start",
+      "next_xpts": 5.043,
+      "horizon_value": 6.009,
+      "p_start": 1.0
     },
     {
       "id": 1084,
@@ -12585,10 +12585,10 @@
       "price": 6.1,
       "ownership": 0.3,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 4.751,
-      "horizon_value": 7.242,
-      "p_start": 0.7
+      "match_status": "sub",
+      "next_xpts": 0.84,
+      "horizon_value": 1.001,
+      "p_start": 0.15
     },
     {
       "id": 1085,
@@ -12597,12 +12597,12 @@
       "squad_id": 41,
       "position": "DEF",
       "price": 5.5,
-      "ownership": 10.5,
+      "ownership": 10.6,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 3.623,
-      "horizon_value": 5.435,
-      "p_start": 0.7
+      "match_status": "start",
+      "next_xpts": 4.508,
+      "horizon_value": 5.375,
+      "p_start": 1.0
     },
     {
       "id": 1086,
@@ -12613,10 +12613,10 @@
       "price": 5.5,
       "ownership": 20.2,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 3.996,
-      "horizon_value": 6.0,
-      "p_start": 0.7
+      "match_status": "start",
+      "next_xpts": 4.987,
+      "horizon_value": 5.946,
+      "p_start": 1.0
     },
     {
       "id": 1087,
@@ -12627,10 +12627,10 @@
       "price": 4.9,
       "ownership": 0.7,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 4.527,
-      "horizon_value": 6.728,
-      "p_start": 0.7
+      "match_status": "sub",
+      "next_xpts": 0.756,
+      "horizon_value": 0.902,
+      "p_start": 0.15
     },
     {
       "id": 1088,
@@ -12639,12 +12639,12 @@
       "squad_id": 41,
       "position": "DEF",
       "price": 5.1,
-      "ownership": 49.4,
+      "ownership": 49.5,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 3.661,
-      "horizon_value": 5.497,
-      "p_start": 0.7
+      "match_status": "start",
+      "next_xpts": 4.569,
+      "horizon_value": 5.448,
+      "p_start": 1.0
     },
     {
       "id": 1089,
@@ -12653,12 +12653,12 @@
       "squad_id": 41,
       "position": "DEF",
       "price": 5.0,
-      "ownership": 15.1,
+      "ownership": 15.2,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 3.736,
-      "horizon_value": 5.603,
-      "p_start": 0.7
+      "match_status": "start",
+      "next_xpts": 4.644,
+      "horizon_value": 5.537,
+      "p_start": 1.0
     },
     {
       "id": 1092,
@@ -12669,10 +12669,10 @@
       "price": 10.0,
       "ownership": 38.7,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 4.871,
-      "horizon_value": 7.427,
-      "p_start": 0.7
+      "match_status": "start",
+      "next_xpts": 6.384,
+      "horizon_value": 7.607,
+      "p_start": 1.0
     },
     {
       "id": 1093,
@@ -12683,10 +12683,10 @@
       "price": 7.8,
       "ownership": 1.9,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 5.526,
-      "horizon_value": 8.41,
-      "p_start": 0.7
+      "match_status": "sub",
+      "next_xpts": 0.946,
+      "horizon_value": 1.127,
+      "p_start": 0.15
     },
     {
       "id": 1094,
@@ -12697,10 +12697,10 @@
       "price": 8.1,
       "ownership": 14.4,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 4.338,
-      "horizon_value": 6.621,
-      "p_start": 0.7
+      "match_status": "start",
+      "next_xpts": 5.701,
+      "horizon_value": 6.793,
+      "p_start": 1.0
     },
     {
       "id": 1095,
@@ -12711,10 +12711,10 @@
       "price": 6.8,
       "ownership": 0.1,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 4.9,
-      "horizon_value": 7.464,
-      "p_start": 0.7
+      "match_status": "sub",
+      "next_xpts": 0.86,
+      "horizon_value": 1.024,
+      "p_start": 0.15
     },
     {
       "id": 1097,
@@ -12725,10 +12725,10 @@
       "price": 4.0,
       "ownership": 0.5,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 3.21,
-      "horizon_value": 4.929,
-      "p_start": 0.7
+      "match_status": "sub",
+      "next_xpts": 0.621,
+      "horizon_value": 0.74,
+      "p_start": 0.15
     },
     {
       "id": 1098,
@@ -12739,10 +12739,10 @@
       "price": 5.0,
       "ownership": 7.3,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 2.517,
-      "horizon_value": 3.747,
-      "p_start": 0.7
+      "match_status": "sub",
+      "next_xpts": 0.458,
+      "horizon_value": 0.546,
+      "p_start": 0.15
     },
     {
       "id": 1099,
@@ -12751,12 +12751,12 @@
       "squad_id": 41,
       "position": "GK",
       "price": 5.0,
-      "ownership": 19.3,
+      "ownership": 19.4,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 2.447,
-      "horizon_value": 3.637,
-      "p_start": 0.7
+      "match_status": "start",
+      "next_xpts": 2.954,
+      "horizon_value": 3.523,
+      "p_start": 1.0
     },
     {
       "id": 1101,
@@ -12765,12 +12765,12 @@
       "squad_id": 41,
       "position": "GK",
       "price": 4.0,
-      "ownership": 0.9,
+      "ownership": 1.0,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 2.767,
-      "horizon_value": 4.087,
-      "p_start": 0.7
+      "match_status": "sub",
+      "next_xpts": 0.493,
+      "horizon_value": 0.588,
+      "p_start": 0.15
     },
     {
       "id": 1102,
@@ -12781,10 +12781,10 @@
       "price": 5.5,
       "ownership": 4.0,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 4.994,
-      "horizon_value": 7.434,
-      "p_start": 0.7
+      "match_status": "sub",
+      "next_xpts": 0.823,
+      "horizon_value": 0.981,
+      "p_start": 0.15
     },
     {
       "id": 1104,
@@ -12795,10 +12795,10 @@
       "price": 7.5,
       "ownership": 2.1,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 4.119,
-      "horizon_value": 6.349,
-      "p_start": 0.7
+      "match_status": "start",
+      "next_xpts": 5.979,
+      "horizon_value": 7.121,
+      "p_start": 1.0
     },
     {
       "id": 1105,
@@ -12809,10 +12809,10 @@
       "price": 7.7,
       "ownership": 3.3,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 4.989,
-      "horizon_value": 7.602,
-      "p_start": 0.7
+      "match_status": "start",
+      "next_xpts": 6.871,
+      "horizon_value": 8.186,
+      "p_start": 1.0
     },
     {
       "id": 1106,
@@ -12823,10 +12823,10 @@
       "price": 8.1,
       "ownership": 7.2,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 3.78,
-      "horizon_value": 5.809,
-      "p_start": 0.7
+      "match_status": "sub",
+      "next_xpts": 0.761,
+      "horizon_value": 0.907,
+      "p_start": 0.15
     },
     {
       "id": 1109,
@@ -13171,7 +13171,7 @@
       "squad_id": 43,
       "position": "DEF",
       "price": 5.0,
-      "ownership": 3.0,
+      "ownership": 3.1,
       "status": "playing",
       "match_status": null,
       "next_xpts": 2.779,
@@ -15369,7 +15369,7 @@
       "squad_id": 2,
       "position": "DEF",
       "price": 4.6,
-      "ownership": 24.2,
+      "ownership": 24.3,
       "status": "playing",
       "match_status": null,
       "next_xpts": 4.096,
@@ -15397,7 +15397,7 @@
       "squad_id": 2,
       "position": "DEF",
       "price": 4.0,
-      "ownership": 15.1,
+      "ownership": 15.2,
       "status": "playing",
       "match_status": null,
       "next_xpts": 3.76,
@@ -15974,8 +15974,8 @@
       "ownership": 0.7,
       "status": "playing",
       "match_status": "sub",
-      "next_xpts": 0.0,
-      "horizon_value": 0.288,
+      "next_xpts": 0.494,
+      "horizon_value": 0.592,
       "p_start": 0.15
     },
     {
@@ -15985,11 +15985,11 @@
       "squad_id": 19,
       "position": "DEF",
       "price": 5.3,
-      "ownership": 15.5,
+      "ownership": 15.6,
       "status": "playing",
       "match_status": "start",
-      "next_xpts": 0.0,
-      "horizon_value": 2.386,
+      "next_xpts": 4.09,
+      "horizon_value": 4.899,
       "p_start": 1.0
     },
     {
@@ -15999,11 +15999,11 @@
       "squad_id": 19,
       "position": "DEF",
       "price": 5.4,
-      "ownership": 11.9,
+      "ownership": 12.0,
       "status": "playing",
       "match_status": "start",
-      "next_xpts": 0.0,
-      "horizon_value": 2.927,
+      "next_xpts": 5.017,
+      "horizon_value": 6.009,
       "p_start": 1.0
     },
     {
@@ -16013,11 +16013,11 @@
       "squad_id": 19,
       "position": "MID",
       "price": 8.0,
-      "ownership": 5.6,
+      "ownership": 5.7,
       "status": "playing",
       "match_status": "sub",
-      "next_xpts": 0.0,
-      "horizon_value": 0.45,
+      "next_xpts": 0.767,
+      "horizon_value": 0.92,
       "p_start": 0.15
     },
     {
@@ -16030,8 +16030,8 @@
       "ownership": 0.2,
       "status": "playing",
       "match_status": "sub",
-      "next_xpts": 0.0,
-      "horizon_value": 0.494,
+      "next_xpts": 0.843,
+      "horizon_value": 1.01,
       "p_start": 0.15
     },
     {
@@ -16993,12 +16993,12 @@
       "squad_id": 5,
       "position": "GK",
       "price": 4.9,
-      "ownership": 9.5,
+      "ownership": 9.4,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 1.779,
-      "horizon_value": 2.289,
-      "p_start": 0.7
+      "match_status": "start",
+      "next_xpts": 0.0,
+      "horizon_value": 0.588,
+      "p_start": 0.807
     },
     {
       "id": 1523,
@@ -17009,10 +17009,10 @@
       "price": 3.5,
       "ownership": 0.8,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 1.892,
-      "horizon_value": 2.445,
-      "p_start": 0.7
+      "match_status": "sub",
+      "next_xpts": 0.0,
+      "horizon_value": 0.119,
+      "p_start": 0.15
     },
     {
       "id": 1524,
@@ -17023,10 +17023,10 @@
       "price": 5.5,
       "ownership": 0.4,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 3.746,
-      "horizon_value": 4.734,
-      "p_start": 0.7
+      "match_status": "start",
+      "next_xpts": 0.0,
+      "horizon_value": 1.508,
+      "p_start": 1.0
     },
     {
       "id": 1525,
@@ -17037,10 +17037,10 @@
       "price": 5.6,
       "ownership": 0.0,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 3.556,
-      "horizon_value": 4.494,
-      "p_start": 0.7
+      "match_status": "sub",
+      "next_xpts": 0.0,
+      "horizon_value": 0.185,
+      "p_start": 0.15
     },
     {
       "id": 1526,
@@ -17049,12 +17049,12 @@
       "squad_id": 5,
       "position": "MID",
       "price": 6.6,
-      "ownership": 9.8,
+      "ownership": 9.7,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 3.223,
-      "horizon_value": 4.064,
-      "p_start": 0.7
+      "match_status": "start",
+      "next_xpts": 0.0,
+      "horizon_value": 1.202,
+      "p_start": 1.0
     },
     {
       "id": 1527,
@@ -17065,10 +17065,10 @@
       "price": 4.7,
       "ownership": 0.2,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 3.374,
-      "horizon_value": 4.26,
-      "p_start": 0.7
+      "match_status": "sub",
+      "next_xpts": 0.0,
+      "horizon_value": 0.177,
+      "p_start": 0.15
     },
     {
       "id": 1528,
@@ -18956,9 +18956,9 @@
       "ownership": 3.0,
       "status": "playing",
       "match_status": null,
-      "next_xpts": 3.646,
-      "horizon_value": 4.988,
-      "p_start": 0.565
+      "next_xpts": 4.717,
+      "horizon_value": 6.443,
+      "p_start": 0.7
     },
     {
       "id": 1710,
@@ -19795,10 +19795,10 @@
       "price": 4.5,
       "ownership": 0.6,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 4.22,
-      "horizon_value": 6.265,
-      "p_start": 0.7
+      "match_status": "sub",
+      "next_xpts": 0.712,
+      "horizon_value": 0.85,
+      "p_start": 0.15
     },
     {
       "id": 1996,
@@ -19809,10 +19809,10 @@
       "price": 4.2,
       "ownership": 0.1,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 3.993,
-      "horizon_value": 5.923,
-      "p_start": 0.7
+      "match_status": "sub",
+      "next_xpts": 0.68,
+      "horizon_value": 0.81,
+      "p_start": 0.15
     },
     {
       "id": 1997,
@@ -19821,12 +19821,12 @@
       "squad_id": 41,
       "position": "MID",
       "price": 6.2,
-      "ownership": 0.7,
+      "ownership": 0.8,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 4.812,
-      "horizon_value": 7.334,
-      "p_start": 0.7
+      "match_status": "sub",
+      "next_xpts": 0.848,
+      "horizon_value": 1.011,
+      "p_start": 0.15
     },
     {
       "id": 1998,
@@ -19835,12 +19835,12 @@
       "squad_id": 41,
       "position": "MID",
       "price": 6.8,
-      "ownership": 0.5,
+      "ownership": 0.6,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 5.178,
-      "horizon_value": 7.888,
-      "p_start": 0.7
+      "match_status": "start",
+      "next_xpts": 7.086,
+      "horizon_value": 8.442,
+      "p_start": 1.0
     },
     {
       "id": 1999,
@@ -19851,10 +19851,10 @@
       "price": 6.5,
       "ownership": 0.8,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 4.995,
-      "horizon_value": 7.611,
-      "p_start": 0.7
+      "match_status": "sub",
+      "next_xpts": 0.874,
+      "horizon_value": 1.041,
+      "p_start": 0.15
     },
     {
       "id": 2000,
@@ -19865,10 +19865,10 @@
       "price": 7.8,
       "ownership": 1.6,
       "status": "playing",
-      "match_status": null,
-      "next_xpts": 4.933,
-      "horizon_value": 7.509,
-      "p_start": 0.7
+      "match_status": "sub",
+      "next_xpts": 0.863,
+      "horizon_value": 1.028,
+      "p_start": 0.15
     },
     {
       "id": 2001,
@@ -20003,7 +20003,7 @@
       "squad_id": 29,
       "position": "GK",
       "price": 4.7,
-      "ownership": 5.6,
+      "ownership": 5.5,
       "status": "playing",
       "match_status": "start",
       "next_xpts": 0.0,
@@ -20031,7 +20031,7 @@
       "squad_id": 29,
       "position": "DEF",
       "price": 6.0,
-      "ownership": 33.5,
+      "ownership": 33.1,
       "status": "playing",
       "match_status": "start",
       "next_xpts": 0.0,
@@ -20157,7 +20157,7 @@
       "squad_id": 29,
       "position": "MID",
       "price": 6.2,
-      "ownership": 1.0,
+      "ownership": 0.9,
       "status": "playing",
       "match_status": "start",
       "next_xpts": 0.0,
@@ -20297,11 +20297,11 @@
       "squad_id": 47,
       "position": "DEF",
       "price": 4.3,
-      "ownership": 5.0,
+      "ownership": 4.9,
       "status": "eliminated",
       "match_status": null,
       "next_xpts": 0.0,
-      "horizon_value": 0.0,
+      "horizon_value": 0.002,
       "p_start": 0.0
     },
     {
