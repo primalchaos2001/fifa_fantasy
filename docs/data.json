@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-29T08:44:29.378322+00:00",
+  "last_updated": "2026-07-30T08:30:36.394055+00:00",
   "next_round_id": 8,
   "current_stage": "F",
   "next_deadline": "2026-07-18T22:00:00+01:00",
@@ -12797,8 +12797,8 @@
       "status": "playing",
       "match_status": null,
       "next_xpts": 0.0,
-      "horizon_value": 0.009,
-      "p_start": 0.0
+      "horizon_value": 0.934,
+      "p_start": 0.7
     },
     {
       "id": 1105,
